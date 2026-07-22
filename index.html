@@ -10,6 +10,185 @@
   
   <title>CampusNews | El Portal de Noticias de CampusLA</title>
 
+  <!-- GOOGLE ADSENSE (OFICIAL Y CONECTADO) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6695776573862698"
+     crossorigin="anonymous"></script>
+
+  <!-- WIDGET NETLIFY IDENTITY (AUTENTICACIÓN CMS) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <style>
+    :root {
+      --primary: #003366;
+      --secondary: #00f2fe;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+    
+    header { background-color: var(--primary); color: #ffffff; padding: 1.5rem 1rem; text-align: center; }
+    header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; }
+    header p { font-size: 1rem; opacity: 0.9; font-weight: 300; }
+
+    /* CONTENEDOR PUBLICITARIO ADSENSE */
+    .adsense-wrapper {
+      background: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      text-align: center;
+      padding: 10px;
+      margin: 1.5rem auto;
+      max-width: 1100px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    .main-layout {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 2.5fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .main-layout { grid-template-columns: 1fr; }
+    }
+
+    .news-container { background: var(--surface); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .sidebar { background: var(--surface); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); height: fit-content; }
+
+    article { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    article:last-child { border-bottom: none; }
+    article h2 { color: var(--primary); font-size: 1.5rem; margin-bottom: 0.5rem; }
+    article .meta { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
+    footer { background: var(--primary); color: #ffffff; text-align: center; padding: 2rem 1rem; margin-top: 3rem; font-size: 0.9rem; }
+    footer a { color: var(--secondary); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>CampusNews</h1>
+    <p>Periodismo Digital & Tendencias Educativas de CampusLA</p>
+  </header>
+
+  <!-- BANNER ADSENSE SUPERIOR -->
+  <div class="adsense-wrapper">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6695776573862698"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- ESTRUCTURA PRINCIPAL -->
+  <div class="main-layout">
+    
+    <!-- COLUMNA PRINCIPAL DE NOTICIAS -->
+    <main class="news-container">
+      
+      <article>
+        <h2>Inauguración del Portal Noticias CampusNews</h2>
+        <div class="meta">Publicado por Redacción CampusLA | Julio 2026</div>
+        <p>Le damos la bienvenida a nuestro nuevo ecosistema noticioso. Un espacio diseñado para informar sobre coyuntura académica, tecnológica y política con la mayor rigurosidad.</p>
+        
+        <!-- REPRODUCTOR OFICIAL DE YOUTUBE -->
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PL3a0mX1u8h64t0o4fG5iKj3V93R8ZJ0y4" allowfullscreen></iframe>
+        </div>
+      </article>
+
+      <!-- BANNER ADSENSE IN-ARTICLE (DENTRO DE NOTICIAS) -->
+      <div class="adsense-wrapper">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-6695776573862698"
+             data-ad-slot="0987654321"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <article>
+        <h2>Análisis Educativo: El Futuro del Aprendizaje Digital</h2>
+        <div class="meta">Sección: Especializado & Educación</div>
+        <p>Las plataformas digitales están transformando la educación superior en América Latina, abriendo fronteras y facilitando la formación continua...</p>
+      </article>
+
+    </main>
+
+    <!-- BARRA LATERAL (SIDEBAR) -->
+    <aside class="sidebar">
+      <h3 style="color: var(--primary); margin-bottom: 1rem;">Publicidad Destacada</h3>
+      
+      <!-- BANNER ADSENSE LATERAL -->
+      <div class="adsense-wrapper" style="min-height: 250px;">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6695776573862698"
+             data-ad-slot="1122334455"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2026 CampusLA - Todos los derechos reservados. | <a href="/admin/">Acceso Redacción (CMS)</a></p>
+  </footer>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
+
   <!-- Script AdSense Pre-configurado -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6695776573862698" crossorigin="anonymous"></script>
 
