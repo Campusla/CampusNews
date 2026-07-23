@@ -15,5 +15,5 @@ collections:
       - {label: "Título de la Noticia", name: "title", widget: "string"}
       - {label: "Fecha de Publicación", name: "date", widget: "datetime"}
       - {label: "Sección", name: "category", widget: "select", options: ["1. Política & Actualidad", "2. Tendencias & Tech", "3. Especializado & Educación"]}
-      - {label: "Imagen Destacada (Horizontal)", name: "image", widget: "image"}
+      - {label: "Imagen Destacada (Horizontal)", name: "image", widget: "image", required: false}
       - {label: "Cuerpo / Contenido de la Noticia", name: "body", widget: "markdown"}
