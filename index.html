@@ -11,190 +11,14 @@
   <title>CampusNews | El Portal de Noticias de CampusLA</title>
 
   <!-- GOOGLE ADSENSE (OFICIAL Y CONECTADO) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6695776573862698"
-     crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6695776573862698" crossorigin="anonymous"></script>
 
   <!-- WIDGET NETLIFY IDENTITY (AUTENTICACIÓN CMS) -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   <style>
     :root {
-      --primary: #003366;
-      --secondary: #00f2fe;
-      --bg: #f8fafc;
-      --surface: #ffffff;
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --border: #e2e8f0;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
-    
-    header { background-color: var(--primary); color: #ffffff; padding: 1.5rem 1rem; text-align: center; }
-    header h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; }
-    header p { font-size: 1rem; opacity: 0.9; font-weight: 300; }
-
-    /* CONTENEDOR PUBLICITARIO ADSENSE */
-    .adsense-wrapper {
-      background: #f1f5f9;
-      border: 1px dashed #cbd5e1;
-      text-align: center;
-      padding: 10px;
-      margin: 1.5rem auto;
-      max-width: 1100px;
-      min-height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-    }
-
-    .main-layout {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 2.5fr 1fr;
-      gap: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .main-layout { grid-template-columns: 1fr; }
-    }
-
-    .news-container { background: var(--surface); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-    .sidebar { background: var(--surface); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); height: fit-content; }
-
-    article { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
-    article:last-child { border-bottom: none; }
-    article h2 { color: var(--primary); font-size: 1.5rem; margin-bottom: 0.5rem; }
-    article .meta { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
-      margin: 1rem 0;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-
-    footer { background: var(--primary); color: #ffffff; text-align: center; padding: 2rem 1rem; margin-top: 3rem; font-size: 0.9rem; }
-    footer a { color: var(--secondary); text-decoration: none; }
-  </style>
-</head>
-<body>
-
-  <!-- ENCABEZADO -->
-  <header>
-    <h1>CampusNews</h1>
-    <p>Periodismo Digital & Tendencias Educativas de CampusLA</p>
-  </header>
-
-  <!-- BANNER ADSENSE SUPERIOR -->
-  <div class="adsense-wrapper">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6695776573862698"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-  <!-- ESTRUCTURA PRINCIPAL -->
-  <div class="main-layout">
-    
-    <!-- COLUMNA PRINCIPAL DE NOTICIAS -->
-    <main class="news-container">
-      
-      <article>
-        <h2>Inauguración del Portal Noticias CampusNews</h2>
-        <div class="meta">Publicado por Redacción CampusLA | Julio 2026</div>
-        <p>Le damos la bienvenida a nuestro nuevo ecosistema noticioso. Un espacio diseñado para informar sobre coyuntura académica, tecnológica y política con la mayor rigurosidad.</p>
-        
-        <!-- REPRODUCTOR OFICIAL DE YOUTUBE -->
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PL3a0mX1u8h64t0o4fG5iKj3V93R8ZJ0y4" allowfullscreen></iframe>
-        </div>
-      </article>
-
-      <!-- BANNER ADSENSE IN-ARTICLE (DENTRO DE NOTICIAS) -->
-      <div class="adsense-wrapper">
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
-             data-ad-layout="in-article"
-             data-ad-format="fluid"
-             data-ad-client="ca-pub-6695776573862698"
-             data-ad-slot="0987654321"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-
-      <article>
-        <h2>Análisis Educativo: El Futuro del Aprendizaje Digital</h2>
-        <div class="meta">Sección: Especializado & Educación</div>
-        <p>Las plataformas digitales están transformando la educación superior en América Latina, abriendo fronteras y facilitando la formación continua...</p>
-      </article>
-
-    </main>
-
-    <!-- BARRA LATERAL (SIDEBAR) -->
-    <aside class="sidebar">
-      <h3 style="color: var(--primary); margin-bottom: 1rem;">Publicidad Destacada</h3>
-      
-      <!-- BANNER ADSENSE LATERAL -->
-      <div class="adsense-wrapper" style="min-height: 250px;">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-6695776573862698"
-             data-ad-slot="1122334455"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </aside>
-
-  </div>
-
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>&copy; 2026 CampusLA - Todos los derechos reservados. | <a href="/admin/">Acceso Redacción (CMS)</a></p>
-  </footer>
-
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-
-</body>
-</html>
-
-  <!-- Script AdSense Pre-configurado -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6695776573862698" crossorigin="anonymous"></script>
-
-  <style>
-    :root {
-      --primary: #003366;      /* Azul Institucional CampusLA */
+      --primary: #003366;       /* Azul Institucional CampusLA */
       --brand-green: #28a745;   /* Verde Oficial */
       --dark: #111827;
       --light: #f4f6f8;
@@ -212,7 +36,7 @@
     .native-tag { background: rgba(40, 167, 69, 0.2); color: var(--brand-green); padding: 2px 8px; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
     .native-link { color: #fff; text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--brand-green); }
 
-    /* HEADER INSTITUCIONAL (DISEÑO #2) */
+    /* HEADER INSTITUCIONAL */
     header { background-color: var(--primary); color: var(--white); padding: 25px 15px; text-align: center; border-bottom: 5px solid var(--brand-green); }
     .brand-title { font-size: 2.5rem; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; }
     .brand-title span { color: var(--brand-green); }
@@ -223,15 +47,30 @@
     nav a { color: var(--white); text-decoration: none; padding: 12px 20px; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; transition: background 0.3s; }
     nav a:hover { background-color: var(--brand-green); }
 
+    /* BANNER PUBLICITARIO ADSENSE */
+    .adsense-wrapper {
+      background: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      text-align: center;
+      padding: 10px;
+      margin: 1.5rem auto;
+      max-width: 1150px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
     /* LAYOUT PRINCIPAL RESPONSIVE */
     .main-container { max-width: 1150px; margin: 25px auto; padding: 0 15px; display: grid; grid-template-columns: 2.2fr 1fr; gap: 25px; }
     @media (max-width: 850px) { .main-container { grid-template-columns: 1fr; } }
 
-    /* SECCIONES DE NOTICIAS (DISEÑO #2) */
+    /* SECCIONES DE NOTICIAS */
     .section-header { border-bottom: 3px solid var(--primary); margin-bottom: 20px; }
     .section-title { background: var(--primary); color: var(--white); padding: 5px 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; display: inline-block; }
 
-    /* TARJETA DE NOTICIA (ESTILO ROBUSTO DISEÑO #2) */
+    /* TARJETA DE NOTICIA */
     .news-card { background: var(--white); border-radius: 8px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; }
     .news-card img { width: 100%; height: 260px; object-fit: cover; }
     .news-body { padding: 20px; }
@@ -242,15 +81,15 @@
     .btn-read:hover { background: #002244; }
 
     /* NOTA EDITORIAL NATIVA INTERCALADA */
-    .native-editorial-note { background: #ffffff; border-left: 4px solid var(--primary); padding: 15px 20px; margin: 25px 0; border: 1px solid var(--border-color); border-left: 4px solid var(--primary); border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+    .native-editorial-note { background: #ffffff; padding: 15px 20px; margin: 25px 0; border: 1px solid var(--border-color); border-left: 4px solid var(--primary); border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
     .native-editorial-note p { font-size: 0.9rem; color: #374151; }
     .native-editorial-note a { color: var(--primary); font-weight: 700; text-decoration: none; }
 
-    /* SIDEBAR (DISEÑO #2) */
+    /* SIDEBAR */
     .sidebar-widget { background: var(--white); padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; }
     .sidebar-title { font-size: 1.1rem; font-weight: 800; border-bottom: 2px solid var(--brand-green); padding-bottom: 8px; margin-bottom: 15px; color: var(--primary); text-transform: uppercase; }
     
-    /* REPRODUCTOR YOUTUBE RESPONSIVO CORREGIDO CON TU VIDEO */
+    /* REPRODUCTOR YOUTUBE RESPONSIVO */
     .video-responsive { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000; }
     .video-responsive iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
@@ -260,7 +99,7 @@
     .social-btn:hover { background: var(--primary); color: var(--white); }
 
     /* DIRECTORIO DE PAUTA SILENCIOSA */
-    .native-partners-container { background: var(--white); padding: 25px 20px; border-radius: 8px; margin: 30px auto; max-width: 1120px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+    .native-partners-container { background: var(--white); padding: 25px 20px; border-radius: 8px; margin: 30px auto; max-width: 1150px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
     .partners-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--brand-green); padding-bottom: 10px; margin-bottom: 15px; }
     .partners-title { font-size: 0.95rem; font-weight: 800; color: var(--primary); text-transform: uppercase; }
     .partners-subtle-tag { font-size: 0.75rem; color: var(--text-muted); font-style: italic; }
@@ -274,6 +113,7 @@
     /* FOOTER */
     footer { background: var(--dark); color: var(--white); text-align: center; padding: 30px 15px; margin-top: 40px; font-size: 0.85rem; }
     footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: var(--brand-green); }
   </style>
 </head>
 <body>
@@ -291,7 +131,7 @@
     </div>
   </div>
 
-  <!-- HEADER INSTITUCIONAL (DISEÑO #2) -->
+  <!-- HEADER INSTITUCIONAL -->
   <header>
     <div class="brand-title">CAMPUS<span>NEWS</span></div>
     <div class="tagline">Análisis, Tendencias e Información Oficial | Red CampusLA</div>
@@ -305,11 +145,24 @@
     <a href="https://www.campuslatinoamerica.edu.co" target="_blank">CampusLA Oficial</a>
   </nav>
 
+  <!-- BANNER ADSENSE SUPERIOR -->
+  <div class="adsense-wrapper">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6695776573862698"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <!-- CONTENIDO PRINCIPAL -->
   <div class="main-container">
     
     <!-- COLUMNA DE NOTICIAS -->
-    <main>
+    <main id="news-feed">
       
       <!-- SECCIÓN 1: POLÍTICA & ACTUALIDAD -->
       <section id="politica" style="margin-bottom: 30px;">
@@ -317,7 +170,7 @@
           <span class="section-title">1. Política & Actualidad</span>
         </div>
 
-        <article class="news-card">
+        <article class="news-card" data-estado="publicado">
           <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200" alt="Noticia Politica">
           <div class="news-body">
             <span class="badge">Política Nacional</span>
@@ -333,13 +186,26 @@
         <p><strong>Nota de la Redacción:</strong> Para estudiantes e investigadores interesados en la homologación de saberes o certificación de competencias universitarias, los criterios técnicos oficiales están disponibles directamente a través del portal de <a href="https://www.campuslatinoamerica.edu.co" target="_blank">CampusLA</a>.</p>
       </div>
 
+      <!-- BANNER ADSENSE IN-ARTICLE -->
+      <div class="adsense-wrapper">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-6695776573862698"
+             data-ad-slot="0987654321"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
       <!-- SECCIÓN 2: TENDENCIAS & TECNOLOGÍA -->
       <section id="tendencias" style="margin-bottom: 30px;">
         <div class="section-header">
           <span class="section-title" style="background: var(--brand-green);">2. Tendencias & Tech</span>
         </div>
 
-        <article class="news-card">
+        <article class="news-card" data-estado="publicado">
           <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="Tendencias Tech">
           <div class="news-body">
             <span class="badge">Tendencias</span>
@@ -356,7 +222,7 @@
           <span class="section-title" style="background: #222;">3. Especializado & Educación</span>
         </div>
 
-        <article class="news-card">
+        <article class="news-card" data-estado="publicado">
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="Especializado Legal">
           <div class="news-body">
             <span class="badge" style="background: var(--primary);">Especializado</span>
@@ -372,7 +238,7 @@
     <!-- BARRA LATERAL -->
     <aside>
       
-      <!-- CANAL DE YOUTUBE INDEXADO (CON TU VIDEO 't6cGCMwkvOE') -->
+      <!-- CANAL DE YOUTUBE INDEXADO -->
       <div class="sidebar-widget">
         <div class="sidebar-title">📺 Canal Oficial YouTube</div>
         <div class="video-responsive">
@@ -391,6 +257,22 @@
         </div>
       </div>
 
+      <!-- BANNER ADSENSE LATERAL -->
+      <div class="sidebar-widget">
+        <div class="sidebar-title">Publicidad</div>
+        <div class="adsense-wrapper" style="min-height: 250px; margin: 0;">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-6695776573862698"
+               data-ad-slot="1122334455"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
     </aside>
 
   </div>
@@ -403,54 +285,74 @@
     </div>
 
     <div class="partners-grid">
-      
-      <!-- MARCA 1: CAMPUSLA -->
       <div class="partner-item active">
         <strong>🎓 CampusLA</strong>
         <p style="color:#666; font-size:0.75rem;">Servicios de orientación y certificación.</p>
         <a href="https://www.campuslatinoamerica.edu.co" target="_blank">Saber más →</a>
       </div>
 
-      <!-- MARCA 2: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
 
-      <!-- MARCA 3: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
 
-      <!-- MARCA 4: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
 
-      <!-- MARCA 5: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
-
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- FOOTER REQUERIDO PARA PRENSA Y ADSENSE -->
   <footer>
     <p>&copy; 2026 CampusNews | Una iniciativa de CampusLA</p>
     <p style="margin-top: 10px;">
-      <a href="#">Privacidad</a> | 
-      <a href="#">Términos de Uso</a> | 
-      <a href="https://www.campuslatinoamerica.edu.co" target="_blank">www.campuslatinoamerica.edu.co</a>
+      <a href="/quienes-somos.html">Quiénes Somos</a> | 
+      <a href="/politica-privacidad.html">Política de Privacidad</a> | 
+      <a href="/contacto-prensa.html">Contacto Prensa</a> | 
+      <a href="https://www.campuslatinoamerica.edu.co" target="_blank">www.campuslatinoamerica.edu.co</a> | 
+      <a href="/admin/">Acceso CMS</a>
     </p>
   </footer>
+
+  <!-- LÓGICA DE CONTROL DE ESTADO (SOFT DELETE) & NETLIFY CMS -->
+  <script>
+    // Filtro para mostrar solo artículos con estado "publicado"
+    document.addEventListener("DOMContentLoaded", () => {
+      const articles = document.querySelectorAll(".news-card");
+      articles.forEach(article => {
+        const estado = article.getAttribute("data-estado");
+        if (estado && estado !== "publicado") {
+          article.style.display = "none"; // Oculta archivados/borradores de la portada
+        }
+      });
+    });
+
+    // Netlify Identity Login
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
