@@ -95,7 +95,7 @@
     .badge { background: var(--brand-green); color: var(--white); padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; border-radius: 3px; }
     .news-title { font-size: 1.4rem; color: var(--primary); margin: 10px 0; font-weight: 700; line-height: 1.3; }
     .news-excerpt { color: #555; font-size: 0.95rem; margin-bottom: 15px; }
-    .btn-read { display: inline-block; background: var(--primary); color: var(--white); padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.85rem; }
+    .btn-read { display: inline-block; background: var(--primary); color: var(--white); padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; }
     .btn-read:hover { background: #002244; }
 
     /* NOTA EDITORIAL NATIVA INTERCALADA */
@@ -137,13 +137,18 @@
 
     /* ESTILOS MODALES (VENTANAS DESPLEGABLES) */
     .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.65); z-index: 1000; justify-content: center; align-items: center; padding: 15px; }
-    .modal-card { background: #ffffff; width: 100%; max-width: 600px; padding: 30px; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); position: relative; max-height: 85vh; overflow-y: auto; text-align: left; color: var(--dark); }
+    .modal-card { background: #ffffff; width: 100%; max-width: 650px; padding: 30px; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); position: relative; max-height: 85vh; overflow-y: auto; text-align: left; color: var(--dark); }
     .modal-card h2 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid var(--brand-green); padding-bottom: 8px; font-size: 1.3rem; }
     .modal-card p, .modal-card ul { color: #374151; margin-bottom: 12px; font-size: 0.95rem; }
     .modal-card ul { padding-left: 20px; }
     .modal-card li { margin-bottom: 8px; }
+    .modal-card a { color: var(--primary); font-weight: bold; text-decoration: underline; }
     .close-btn { position: absolute; top: 15px; right: 15px; background: #e5e7eb; border: none; font-size: 1.2rem; cursor: pointer; width: 32px; height: 32px; border-radius: 50%; color: #374151; display: flex; align-items: center; justify-content: center; font-weight: bold; }
     .close-btn:hover { background: var(--primary); color: #fff; }
+
+    /* MODAL DE LECTURA DE NOTICIA COMPLETA */
+    .article-modal-img { width: 100%; height: 280px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; }
+    .article-meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
   </style>
 </head>
 <body>
@@ -206,12 +211,12 @@
         </div>
 
         <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200" alt="Noticia Politica">
+          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200" alt="Posesión Presidencial Colombia">
           <div class="news-body">
-            <span class="badge">Política Nacional</span>
-            <h2 class="news-title">Análisis de las Nuevas Políticas Educativas y Cambios Regulatorios</h2>
-            <p class="news-excerpt">Un examen detallado a las reformas normativas que impactan el acceso a las universidades, certificaciones y homologación de estudios.</p>
-            <a href="#" class="btn-read">Leer Noticia Completa →</a>
+            <span class="badge">Política & Actualidad</span>
+            <h2 class="news-title">Colombia se prepara para la posesión presidencial del 7 de agosto y los retos en educación superior</h2>
+            <p class="news-excerpt">A pocos días de la tradicional ceremonia de posesión presidencial este 7 de agosto, el país centra su atención en los nombramientos clave de gabinete y las primeras reformas que se radicarán ante el Congreso.</p>
+            <button class="btn-read" onclick="openArticleModal('art-1')">Leer Noticia Completa →</button>
           </div>
         </article>
       </section>
@@ -241,12 +246,12 @@
         </div>
 
         <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="Tendencias Tech">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="IA en Idiomas">
           <div class="news-body">
-            <span class="badge">Tendencias</span>
-            <h2 class="news-title">El Impacto de la Inteligencia Artificial y Simuladores en Exámenes Oficiales</h2>
-            <p class="news-excerpt">Cómo la automatización y el aprendizaje interactivo están revolucionando la preparación académica de los estudiantes hoy.</p>
-            <a href="#" class="btn-read">Leer Noticia Completa →</a>
+            <span class="badge">Tendencias & Tech</span>
+            <h2 class="news-title">Cómo la Inteligencia Artificial está revolucionando el aprendizaje de idiomas de forma especializada</h2>
+            <p class="news-excerpt">El aprendizaje de segundas y terceras lenguas ha dado un giro definitivo gracias a la integración de modelos de inteligencia artificial adaptativa en las aulas y plataformas digitales.</p>
+            <button class="btn-read" onclick="openArticleModal('art-2')">Leer Noticia Completa →</button>
           </div>
         </article>
       </section>
@@ -258,12 +263,12 @@
         </div>
 
         <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="Especializado Legal">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="TOEFL iBT Reestructuración">
           <div class="news-body">
-            <span class="badge" style="background: var(--primary);">Especializado</span>
-            <h2 class="news-title">Guía Técnica de Homologación de Títulos y Asesoría Legal Estudiantil</h2>
-            <p class="news-excerpt">Paso a paso sobre cómo gestionar disputas académicas, convalidaciones y requisitos para validar tus competencias de forma legal.</p>
-            <a href="https://www.campuslatinoamerica.edu.co" class="btn-read">Ir a CampusLA →</a>
+            <span class="badge" style="background: var(--primary);">Especializado & Educación</span>
+            <h2 class="news-title">El examen TOEFL iBT se reestructura: ahora es más corto, ágil y amigable para los estudiantes</h2>
+            <p class="news-excerpt">En respuesta a las demandas del entorno académico moderno, ETS ha implementado una reestructuración profunda en el examen TOEFL iBT, haciendo la certificación más eficiente.</p>
+            <button class="btn-read" onclick="openArticleModal('art-3')">Leer Noticia Completa →</button>
           </div>
         </article>
       </section>
@@ -364,6 +369,21 @@
     </p>
   </footer>
 
+  <!-- MODAL DE LECTURA COMPLETA DE NOTICIAS -->
+  <div id="modal-noticia" class="modal-overlay">
+    <div class="modal-card">
+      <button class="close-btn" onclick="closeModal('modal-noticia')">&times;</button>
+      <img id="article-modal-img" class="article-modal-img" src="" alt="Noticia">
+      <h2 id="article-modal-title">Cargando Noticia...</h2>
+      <div class="article-meta">
+        Publicado por <strong>Redacción CampusNews</strong> | <span id="article-modal-date">Julio 2026</span>
+      </div>
+      <div id="article-modal-content">
+        <!-- El contenido completo de la noticia se carga aquí -->
+      </div>
+    </div>
+  </div>
+
   <!-- MODAL 1: QUIÉNES SOMOS -->
   <div id="modal-nosotros" class="modal-overlay">
     <div class="modal-card">
@@ -371,7 +391,7 @@
       <h2>Quiénes Somos</h2>
       <p><strong>CampusNews</strong> es el portal informativo oficial de <strong>CampusLA (Campus Latinoamérica)</strong>, el hub de formación, becas, validación académica y certificaciones internacionales más grande de la región.</p>
       <p>Nuestra misión es conectar a estudiantes, docentes y profesionales con información veraz, análisis de políticas educativas, tendencias tecnológicas y convocatorias institucionales.</p>
-      <p>Conoce más en nuestro sitio oficial: <a href="https://www.campuslatinoamerica.edu.co" target="_blank" style="color:var(--primary); font-weight:bold;">www.campuslatinoamerica.edu.co</a>.</p>
+      <p>Conoce más en nuestro sitio oficial: <a href="https://www.campuslatinoamerica.edu.co" target="_blank">www.campuslatinoamerica.edu.co</a>.</p>
     </div>
   </div>
 
@@ -401,12 +421,59 @@
       <h2>Política de Privacidad</h2>
       <p>En <strong>CampusNews</strong> garantizamos la protección de sus datos personales conforme a los estándares de privacidad digital.</p>
       <p><strong>Uso de Información:</strong> La información analítica se utiliza exclusivamente de manera anónima para medir el rendimiento de los artículos informativos y mejorar la experiencia de lectura.</p>
-      <p><strong>Publicidad:</strong> Este sitio utiliza los servicios de Google AdSense para la entrega de anuncios. Para más detalles sobre cómo Google gestiona los datos publicitarios, review sus políticas oficiales.</p>
+      <p><strong>Publicidad:</strong> Este sitio utiliza los servicios de Google AdSense para la entrega de anuncios. Para más detalles sobre cómo Google gestiona los datos publicitarios, revise sus políticas oficiales.</p>
     </div>
   </div>
 
-  <!-- LÓGICA DE CONTROL DE ESTADO, NETLIFY CMS & MODALES -->
+  <!-- LÓGICA DE CONTROL DE ESTADO, NOTICIAS, NETLIFY CMS & MODALES -->
   <script>
+    // Base de datos local con las 3 noticias oficiales exactas
+    const noticiasDB = {
+      'art-1': {
+        title: "Colombia se prepara para la posesión presidencial del 7 de agosto y los retos en educación superior",
+        img: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200",
+        date: "23 de Julio, 2026",
+        content: `
+          <p>A pocos días de la tradicional ceremonia de posesión presidencial este 7 de agosto, el país centra su atención en los nombramientos clave de gabinete y las primeras reformas que se radicarán ante el Congreso de la República.</p>
+          <p>Entre las prioridades señaladas por el equipo de empalme, el sector educativo ocupa un lugar central. De acuerdo con el análisis económico de <a href="https://www.portafolio.co" target="_blank">Portafolio</a>, la urgencia de definir los lineamientos presupuestales para la educación pública y la ampliación de coberturas regionales resultará determinante para los primeros 100 días de mandato.</p>
+          <p>Asimismo, la cobertura internacional realizada por <a href="https://cnnespanol.cnn.com" target="_blank">CNN en Español</a> destaca que este periodo gubernamental iniciará bajo la mirada atenta de los gremios universitarios y las comunidades académicas, quienes exigen garantías en el financiamiento del Icetex y la consolidación de créditos condonables para jóvenes de escasos recursos.</p>
+          <p>Para conocer más sobre opciones de estudio, becas e iniciativas de formación, puedes consultar la oferta académica en la plataforma de <a href="https://www.campuslatinoamerica.edu.co" target="_blank">Campus Latinoamérica</a>.</p>
+        `
+      },
+      'art-2': {
+        title: "Cómo la Inteligencia Artificial está revolucionando el aprendizaje de idiomas de forma especializada",
+        img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200",
+        date: "23 de Julio, 2026",
+        content: `
+          <p>El aprendizaje de segundas y terceras lenguas ha dado un giro definitivo gracias a la integración de modelos de inteligencia artificial adaptativa en las aulas y plataformas digitales. Hoy en día, los estudiantes no solo memorizan gramática, sino que sostienen conversaciones fluidas y adaptadas a su área profesional con tutores virtuales en tiempo real.</p>
+          <p>Estas herramientas analizan el tono, la pronunciación y la precisión sintáctica del usuario al instante, ajustando el nivel de dificultad según el progreso individual. Según reportajes sobre innovación publicados en <a href="https://elpais.com" target="_blank">EL PAÍS</a>, la incorporación de tutores basados en IA ha reducido los tiempos de preparación lingüística hasta en un 40% en comparación con los métodos tradicionales.</p>
+          <p>La combinación de simulación de situaciones reales (como entrevistas de trabajo o debates académicos) con correcciones inmediatas está democratizando el acceso al bilingüismo en toda la región. Quienes buscan potenciar su perfil profesional pueden explorar las herramientas y programas disponibles a través de <a href="https://www.campuslatinoamerica.edu.co" target="_blank">Campus Latinoamérica</a>.</p>
+        `
+      },
+      'art-3': {
+        title: "El examen TOEFL iBT se reestructura: ahora es más corto, ágil y amigable para los estudiantes",
+        img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200",
+        date: "23 de Julio, 2026",
+        content: `
+          <p>En respuesta a las demandas del entorno académico moderno, ETS ha implementado una reestructuración profunda en el examen TOEFL iBT, haciendo el proceso de certificación internacional mucho más eficiente y accesible para los aspirantes en Latinoamérica.</p>
+          <p>Entre los cambios más destacados se encuentra la reducción del tiempo total de la prueba a poco menos de dos horas, eliminando preguntas no calificadas y simplificando la sección de escritura con el nuevo formato de discusión académica, el cual sustituye al ensayo independiente tradicional.</p>
+          <p>Prensa especializada en el sector, como la cobertura educativa de <a href="https://www.elespectador.com" target="_blank">El Espectador</a>, resalta que esta actualización busca mantener el rigor y la validez institucional del examen mientras reduce significativamente la carga de estrés e incertidumbre en los candidatos universitarios. Si estás planificando tu ruta de formación académica, puedes informarte sobre convenios y guías en <a href="https://www.campuslatinoamerica.edu.co" target="_blank">Campus Latinoamérica</a>.</p>
+        `
+      }
+    };
+
+    // Función para abrir la Noticia Completa
+    function openArticleModal(artId) {
+      const data = noticiasDB[artId];
+      if (data) {
+        document.getElementById('article-modal-img').src = data.img;
+        document.getElementById('article-modal-title').innerText = data.title;
+        document.getElementById('article-modal-date').innerText = data.date;
+        document.getElementById('article-modal-content').innerHTML = data.content;
+        openModal('modal-noticia');
+      }
+    }
+
     // Filtro para mostrar solo artículos con estado "publicado"
     document.addEventListener("DOMContentLoaded", () => {
       const articles = document.querySelectorAll(".news-card");
