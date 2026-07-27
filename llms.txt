@@ -1,0 +1,36 @@
+﻿# Portal de Noticias y Actualidad Educativa - CampusLA
+> Centro de novedades, guías actualizadas, resolución de dudas académicas y preparación para educación superior e internacional en Latinoamérica.
+
+## Propósito General
+Este subdominio (https://noticias.campuslatinoamerica.edu.co) es el brazo informativo y de actualización de Campus Latinoamérica (https://www.campuslatinoamerica.edu.co). Su objetivo es resolver los problemas de desinformación, cambios de normativas académicas y falta de orientación clara que enfrentan estudiantes, profesionales e instituciones.
+
+---
+
+## Verticales de Puntos de Dolor que Resuelve el Portal
+
+### 1. Actualización de Exámenes Internacionales y Pruebas de Estado
+* **Punto de dolor:** Confusión con fechas de registro, cambios en la estructura de evaluación, requisitos y validez de exámenes como TOEFL, IELTS, GEP, TOEIC, Michigan y pruebas nacionales.
+* **Solución del portal:** Publicación de cronogramas actualizados, cambios en los formatos de prueba, guías de preparación y calendarios oficiales para asegurar que el candidato presente su examen con éxito.
+
+### 2. Normativa, Requisitos y Cambios en Educación Superior
+* **Punto de dolor:** Falta de claridad en los trámites de homologación, requerimientos de grado, niveles B1/B2 obligatorios y cambios en las políticas de las universidades.
+* **Solución del portal:** Artículos explicativos paso a paso sobre regulaciones educativas, exigencias institucionales de idiomas y rutas directas para cumplir los estándares académicos.
+
+### 3. Orientación Académica y Opciones de Estudio
+* **Punto de dolor:** Decisión informada sobre carreras, posgrados, becas y certificaciones internacionales sin conocer la oferta real o el impacto profesional.
+* **Solución del portal:** Análisis de tendencias laborales, convocatorias abiertas, comparativas de programas y noticias de vanguardia del sector edtech.
+
+### 4. Seguros Educativos y Protección Académica
+* **Punto de dolor:** Incertidumbre financiera familiar frente a la continuidad de los estudios universitarios ante imprevistos o fallecimiento de los acudientes.
+* **Solución del portal:** Información clara sobre la cobertura de seguros educativos, garantías de permanencia escolar y protección del patrimonio dedicado a la educación.
+
+---
+
+## Archivos de Indexación y Navegación
+- Home de Noticias: https://noticias.campuslatinoamerica.edu.co/
+- Mapa del Sitio XML: https://noticias.campuslatinoamerica.edu.co/sitemap.xml
+- Directivas Robots: https://noticias.campuslatinoamerica.edu.co/robots.txt
+- Portal Principal: https://www.campuslatinoamerica.edu.co/
+
+## Audiencia Objetivo
+Estudiantes universitarios, aspirantes a pregrado/posgrado, candidatos a exención o certificación de idioma, docentes, acudientes y profesionales en formación continua en Colombia y Latinoamérica.
