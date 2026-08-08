@@ -157,6 +157,83 @@
 </head>
 <body>
 
+  <!-- MODAL SCRIPT -->
+  <script>
+    const noticiasDB = {
+      'art-1': {
+        title: "Colombia se prepara para la posesión presidencial del 7 de agosto y los retos en educación superior",
+        img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
+        date: "23 de Julio, 2026",
+        content: `<p>La posesión presidencial del 7 de agosto representa no solo un cambio de mando, sino el inicio de una transformación profunda en el sector educativo colombiano. Analistas coinciden en que los retos actuales exigen una reforma estructural que priorice la calidad académica, la infraestructura tecnológica en zonas rurales y el fortalecimiento de la financiación para estudiantes de bajos recursos.</p>
+        <p>Este periodo presidencial, que abarca de 2026 a 2030, se plantea como un ciclo donde la descentralización de la educación superior será el eje vertebrador. Las expectativas están centradas en cómo el nuevo gabinete abordará la brecha existente entre las competencias requeridas por el mercado laboral moderno y la oferta académica actual de las instituciones de educación superior.</p>
+        <p>La radicación de las primeras reformas ante el Congreso de la República será determinante para medir la voluntad política del nuevo gobierno respecto a la gratuidad, el fortalecimiento de la investigación universitaria y la modernización de los currículos frente a la cuarta revolución industrial.</p>`
+      },
+      'art-2': {
+        title: "Cómo la Inteligencia Artificial está revolucionando el aprendizaje de idiomas de forma especializada",
+        img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+        date: "23 de Julio, 2026",
+        content: `<p>El aprendizaje de segundas y terceras lenguas ha dejado de ser un proceso lineal para convertirse en una experiencia inmersiva y adaptativa, gracias al auge de los modelos de inteligencia artificial (IA). A diferencia de los métodos tradicionales, la nueva generación de plataformas educativas emplea algoritmos que analizan en tiempo real los patrones de error, el nivel de comprensión auditiva y la velocidad de adquisición léxica de cada estudiante.</p>
+        <p>Esta personalización extrema garantiza que cada sesión de estudio esté optimizada para los objetivos específicos del usuario, ya sea para fines académicos, negocios o fines migratorios. Los modelos de lenguaje tipo LLM permiten ahora practicar conversaciones complejas con tutores virtuales que corrigen pronunciación, gramática y modismos con una precisión sorprendente.</p>
+        <p>Expertos en edtech señalan que esta tecnología es apenas la punta del iceberg. Se espera que en los próximos años, la integración de entornos de realidad virtual combinados con IA permita una inmersión lingüística completa sin necesidad de desplazamientos internacionales, democratizando el acceso a niveles de fluidez avanzada.</p>`
+      },
+      'art-3': {
+        title: "El examen TOEFL iBT se reestructura: ahora es más corto, ágil y amigable para los estudiantes",
+        img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
+        date: "23 de Julio, 2026",
+        content: `<p>La reciente reestructuración del examen TOEFL iBT, anunciada por ETS, responde a una demanda global de eficiencia en los procesos de certificación académica. Con una reducción significativa en su duración, el examen ahora se concentra en evaluar las competencias comunicativas esenciales de manera más directa, sin sacrificar la rigurosidad que lo caracteriza como el estándar de oro en las pruebas de suficiencia en inglés.</p>
+        <p>Los cambios más destacados incluyen la simplificación de las instrucciones, la eliminación de secciones redundantes y una optimización en la interfaz de usuario, lo que reduce la carga cognitiva y el estrés durante la evaluación. Esto representa un alivio considerable para miles de estudiantes que requieren puntajes específicos para programas de becas y procesos de homologación de títulos.</p>
+        <p>Esta nueva modalidad es, sin duda, un paso adelante hacia una cultura de evaluación más amigable y accesible. La rapidez en la entrega de resultados y la posibilidad de realizar la prueba en casa o en centros autorizados con los mismos estándares de seguridad, reafirma la posición del TOEFL iBT como la opción preferida por universidades en Estados Unidos, Canadá y Europa.</p>`
+      },
+      'art-4': {
+        title: "Ministerio de Educación e ICETEX anuncian nuevas convocatorias para subsidios de tasa y sostenibilidad",
+        img: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
+        date: "27 de Julio, 2026",
+        content: `<p>En respuesta al complejo panorama económico que enfrentan las familias colombianas, el Ministerio de Educación, en articulación con el ICETEX, ha lanzado un ambicioso paquete de alivios financieros. Estas convocatorias están diseñadas para mitigar la deserción escolar y garantizar que miles de estudiantes puedan continuar con sus trayectorias educativas a pesar de la coyuntura inflacionaria.</p>
+        <p>Los subsidios no solo cubren el diferencial de tasas de interés para créditos educativos vigentes, sino que también implementan nuevos mecanismos de apoyo a la sostenibilidad académica para estudiantes en condiciones de vulnerabilidad extrema. Estas ayudas buscan aliviar el costo de vida estudiantil, incluyendo apoyos para transporte y materiales académicos esenciales.</p>
+        <p>El proceso de postulación se ha digitalizado completamente, facilitando el acceso a los ciudadanos en regiones apartadas. Se espera que este conjunto de medidas favorezca significativamente la retención estudiantil para el segundo semestre de 2026, consolidando una red de seguridad que permite la continuidad de los proyectos de formación profesional en todo el territorio nacional.</p>`
+      },
+      'art-5': {
+        title: "El impacto de los 'Agentes Inteligentes' en la evaluación y tutoría de la educación universitaria",
+        img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800",
+        date: "27 de Julio, 2026",
+        content: `<p>La introducción de agentes inteligentes en el ecosistema universitario ha dejado de ser un proyecto experimental para convertirse en una realidad operativa. Estos sistemas, potenciados por inteligencia artificial generativa, están actuando como tutores 24/7, proporcionando retroalimentación inmediata, resolución de dudas complejas y orientación metodológica personalizada para investigadores y estudiantes de pregrado.</p>
+        <p>Lo que hace especial a esta nueva era de herramientas edtech es su capacidad para evaluar procesos creativos y analíticos en lugar de limitarse a respuestas binarias. Por ejemplo, los agentes ahora pueden analizar la estructura argumentativa de un ensayo, detectar inconsistencias en el razonamiento lógico de un código fuente o incluso realizar simulacros de defensa oral para proyectos de grado.</p>
+        <p>A pesar de los retos éticos y de seguridad de la información, el consenso entre los expertos del sector es que la implementación de estas herramientas permite a los docentes enfocarse en tareas de mayor nivel, como el mentorazgo académico y la investigación interdisciplinaria, mientras que la parte administrativa y de nivelación de conocimientos es gestionada eficazmente por los agentes.</p>`
+      },
+      'art-6': {
+        title: "Aumenta la exigencia de certificaciones B2/C1 para opciones de grado y becas internacionales en 2026",
+        img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800",
+        date: "27 de Julio, 2026",
+        content: `<p>El panorama de la competitividad laboral internacional ha llevado a las instituciones de educación superior a elevar el estándar de egreso. Actualmente, más del 80% de las universidades en la región han estandarizado la obligatoriedad de presentar certificaciones internacionales de nivel B2 o C1 (según el Marco Común Europeo) para obtener el título profesional y acceder a becas de movilidad internacional.</p>
+        <p>Esta medida, si bien desafiante para muchos estudiantes, responde a la necesidad de garantizar que los profesionales latinoamericanos puedan integrarse con éxito en economías globales donde el inglés es la lengua franca de la ciencia, la tecnología y el comercio. Las universidades están acompañando esta exigencia con centros de lenguas robustos y convenios para que los estudiantes preparen sus exámenes con simuladores oficiales.</p>
+        <p>La recomendación para los estudiantes de pregrado es iniciar el proceso de preparación y certificación desde los primeros semestres. Las oportunidades que se abren para aquellos que poseen un nivel C1 son exponenciales, abriendo puertas tanto en programas de posgrado de élite como en el mercado laboral transnacional que busca talento altamente calificado y con habilidades comunicativas globales.</p>`
+      },
+      'art-7': {
+        title: "Cali es el centro de la historia: Abelardo de la Espriella asume la Presidencia de Colombia este 7 de agosto",
+        img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
+        date: "7 de Agosto, 2026",
+        content: `<p>En un hecho histórico y sin precedentes, la ciudad de Cali se convierte hoy en la capital de la política nacional. Abelardo de la Espriella asume la Presidencia de la República para el periodo 2026-2030 en una ceremonia realizada en la Arena USC, marcando el inicio de un gobierno que promete descentralizar la gestión pública. La elección de Cali como sede de la transmisión de mando envía un mensaje potente de integración regional.</p>
+        <p>El acto, que cuenta con la presencia de delegaciones internacionales y líderes de diversos sectores, representa el comienzo de un nuevo ciclo institucional para Colombia. Desde el sector educativo, la expectativa se centra en los lineamientos que el nuevo gabinete definirá para la infraestructura y el desarrollo regional, así como en las políticas de conectividad que buscan cerrar la brecha entre el centro y la periferia.</p>
+        <p>El presidente De la Espriella ha enfatizado en sus discursos previos que el desarrollo del país depende de la capacidad de sus regiones para generar conocimiento y valor agregado. Por lo tanto, se espera un despliegue de políticas públicas enfocadas en el fortalecimiento de la educación técnica, la investigación científica aplicada y la creación de hubs tecnológicos que permitan a Colombia competir de mejor manera en el panorama global.</p>`
+      }
+    };
+
+    function openArticleModal(artId) {
+      const data = noticiasDB[artId];
+      if (data) {
+        document.getElementById('article-modal-img').src = data.img;
+        document.getElementById('article-modal-title').innerText = data.title;
+        document.getElementById('article-modal-date').innerText = data.date;
+        document.getElementById('article-modal-content').innerHTML = data.content;
+        document.getElementById('modal-noticia').style.display = 'flex';
+      }
+    }
+
+    function openModal(modalId) { document.getElementById(modalId).style.display = 'flex'; }
+    function closeModal(modalId) { document.getElementById(modalId).style.display = 'none'; }
+    window.onclick = function(e) { if (e.target.classList.contains('modal-overlay')) e.target.style.display = 'none'; }
+  </script>
+
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TP9SK733"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -222,8 +299,8 @@
         </article>
 
         <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&auto=format&fit=crop&q=80" alt="Cali transporte y ciudad" width="800" height="260" loading="lazy">
-  <div class="news-body">
+          <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800" alt="ICETEX educación" width="800" height="260" loading="lazy">
+          <div class="news-body">
             <span class="badge">POLÍTICA & ACTUALIDAD</span>
             <h2 class="news-title">Ministerio de Educación e ICETEX anuncian nuevas convocatorias para subsidios de tasa y sostenibilidad</h2>
             <p class="news-excerpt">A pocos días del cambio legislativo de agosto, las autoridades educativas formalizan un paquete de alivios financieros dirigidos a estudiantes de pregrado en condiciones de vulnerabilidad socioeconómica.</p>
@@ -376,7 +453,7 @@
     </p>
   </footer>
 
-  <!-- MODALES Y SCRIPT -->
+  <!-- MODALES -->
   <div id="modal-noticia" class="modal-overlay" role="dialog" aria-modal="true">
     <div class="modal-card">
       <button class="close-btn" onclick="closeModal('modal-noticia')" aria-label="Cerrar modal">&times;</button>
@@ -413,68 +490,6 @@
       <p>En <strong>CampusNews</strong> garantizamos la protección de sus datos personales conforme a los estándares de privacidad digital.</p>
     </div>
   </div>
-
-  <script>
-    const noticiasDB = {
-      'art-1': {
-        title: "Colombia se prepara para la posesión presidencial del 7 de agosto y los retos en educación superior",
-        img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
-        date: "23 de Julio, 2026",
-        content: `<p>A pocos días de la ceremonia de posesión presidencial este 7 de agosto, el país centra su atención en los nombramientos clave de gabinete y las primeras reformas que se radicarán ante el Congreso.</p>`
-      },
-      'art-2': {
-        title: "Cómo la Inteligencia Artificial está revolucionando el aprendizaje de idiomas de forma especializada",
-        img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
-        date: "23 de Julio, 2026",
-        content: `<p>El aprendizaje de segundas y terceras lenguas ha dado un giro definitivo gracias a la integración de modelos de inteligencia artificial adaptativa.</p>`
-      },
-      'art-3': {
-        title: "El examen TOEFL iBT se reestructura: ahora es más corto, ágil y amigable para los estudiantes",
-        img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
-        date: "23 de Julio, 2026",
-        content: `<p>En respuesta al entorno académico moderno, ETS ha implementado una reestructuración profunda en el examen TOEFL iBT.</p>`
-      },
-      'art-4': {
-        title: "Ministerio de Educación e ICETEX anuncian nuevas convocatorias para subsidios de tasa y sostenibilidad",
-        img: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
-        date: "27 de Julio, 2026",
-        content: `<p>En el marco del cierre de inscripciones para el segundo semestre académico de 2026, el Ministerio de Educación y el ICETEX formalizaron la apertura de nuevas líneas de crédito.</p>`
-      },
-      'art-5': {
-        title: "El impacto de los 'Agentes Inteligentes' en la evaluación y tutoría de la educación universitaria",
-        img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800",
-        date: "27 de Julio, 2026",
-        content: `<p>La adopción de agentes autónomos de inteligencia artificial dentro de los campus universitarios está marcando el hito edtech más relevante del año 2026.</p>`
-      },
-      'art-6': {
-        title: "Aumenta la exigencia de certificaciones B2/C1 para opciones de grado y becas internacionales en 2026",
-        img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800",
-        date: "27 de Julio, 2026",
-        content: `<p>Los consejos académicos de más de 50 universidades de la región han actualizado sus reglamentos estandarizando la presentación obligatoria de exámenes internacionales de suficiencia en inglés.</p>`
-      },
-      'art-7': {
-        title: "Cali es el centro de la historia: Abelardo de la Espriella asume la Presidencia de Colombia este 7 de agosto",
-        img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
-        date: "7 de Agosto, 2026",
-        content: `<p>En un hecho histórico y sin precedentes, la ciudad de Cali se convierte hoy en la capital de la política nacional. Abelardo de la Espriella asume la Presidencia de la República para el periodo 2026-2030 en una ceremonia realizada en la Arena USC, marcando el inicio de un gobierno que promete descentralizar la gestión pública.</p><p>El acto, que cuenta con la presencia de delegaciones internacionales y líderes de diversos sectores, representa el comienzo de un nuevo ciclo institucional para Colombia. Desde el sector educativo, la expectativa se centra en los lineamientos que el nuevo gabinete definirá para la infraestructura y el desarrollo regional.</p>`
-      }
-    };
-
-    function openArticleModal(artId) {
-      const data = noticiasDB[artId];
-      if (data) {
-        document.getElementById('article-modal-img').src = data.img;
-        document.getElementById('article-modal-title').innerText = data.title;
-        document.getElementById('article-modal-date').innerText = data.date;
-        document.getElementById('article-modal-content').innerHTML = data.content;
-        openModal('modal-noticia');
-      }
-    }
-
-    function openModal(modalId) { document.getElementById(modalId).style.display = 'flex'; }
-    function closeModal(modalId) { document.getElementById(modalId).style.display = 'none'; }
-    window.onclick = function(e) { if (e.target.classList.contains('modal-overlay')) e.target.style.display = 'none'; }
-  </script>
 
 </body>
 </html>
