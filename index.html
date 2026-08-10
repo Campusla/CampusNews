@@ -6,7 +6,7 @@
   
   <!-- SEO ALTO NIVEL & GOOGLE DISCOVER -->
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="description" content="Portal oficial de noticias, análisis académico, política, tendencias y cobertura de emergencias de CampusLA.">
+  <meta name="description" content="Portal oficial de noticias, análisis académico, política y tendencias de CampusLA.">
   
   <title>CampusNews | El Portal de Noticias de CampusLA</title>
 
@@ -52,21 +52,26 @@
     .section-header { border-bottom: 3px solid var(--primary); margin-bottom: 20px; }
     .section-title { background: var(--primary); color: var(--white); padding: 5px 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; display: inline-block; }
 
-    /* TARJETA DE NOTICIA ROBUSTA */
+    /* TARJETA DE NOTICIA */
     .news-card { background: var(--white); border-radius: 8px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; }
-    .news-card img { width: 100%; height: 280px; object-fit: cover; }
-    .news-body { padding: 25px; }
+    .news-card img { width: 100%; height: 260px; object-fit: cover; }
+    .news-body { padding: 20px; }
     .badge { background: var(--brand-green); color: var(--white); padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; border-radius: 3px; }
-    .news-title { font-size: 1.5rem; color: var(--primary); margin: 12px 0; font-weight: 700; line-height: 1.3; }
-    .news-date { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; font-weight: 600; }
-    
-    /* ESTILOS INTERNOS PARA TEXTOS LARGOS DE UNA PÁGINA */
-    .news-content p { margin-bottom: 15px; color: #374151; font-size: 1rem; line-height: 1.7; }
-    .news-content h3 { font-size: 1.2rem; color: var(--primary); margin: 20px 0 10px 0; font-weight: 700; border-left: 3px solid var(--brand-green); padding-left: 10px; }
-    .news-content ul { margin: 15px 0 15px 20px; color: #374151; }
-    .news-content li { margin-bottom: 8px; line-height: 1.6; }
+    .news-title { font-size: 1.4rem; color: var(--primary); margin: 10px 0; font-weight: 700; line-height: 1.3; }
+    .news-excerpt { color: #555; font-size: 0.95rem; margin-bottom: 15px; }
+    .btn-read { display: inline-block; background: var(--primary); color: var(--white); padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; }
+    .btn-read:hover { background: #002244; }
 
-    /* NOTA EDITORIAL NATIVA */
+    /* VISTA DE ARTÍCULO EXTENDIDO / LECTURA COMPLEJA */
+    .full-article-container { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; margin-bottom: 30px; display: none; }
+    .full-article-container.active { display: block; }
+    .back-btn { background: var(--dark); color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 20px; cursor: pointer; border: none; }
+    .full-article-content h3 { font-size: 1.2rem; color: var(--primary); margin: 20px 0 10px 0; font-weight: 700; border-left: 3px solid var(--brand-green); padding-left: 10px; }
+    .full-article-content p { margin-bottom: 15px; color: #374151; font-size: 1rem; line-height: 1.7; }
+    .full-article-content ul { margin: 15px 0 15px 20px; color: #374151; }
+    .full-article-content li { margin-bottom: 8px; line-height: 1.6; }
+
+    /* NOTA EDITORIAL NATIVA INTERCALADA */
     .native-editorial-note { background: #ffffff; border-left: 4px solid var(--primary); padding: 15px 20px; margin: 25px 0; border: 1px solid var(--border-color); border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
     .native-editorial-note p { font-size: 0.9rem; color: #374151; }
     .native-editorial-note a { color: var(--primary); font-weight: 700; text-decoration: none; }
@@ -122,123 +127,32 @@
 
   <!-- NAVEGACIÓN PRINCIPAL -->
   <nav>
-    <a href="#emergencia">🚨 Última Hora: Emergencia</a>
-    <a href="#politica">1. Política & Actualidad</a>
-    <a href="#tendencias">2. Tendencias & Tech</a>
-    <a href="#especializado">3. Especializado & Educación</a>
+    <a href="index.html">Inicio</a>
+    <a href="#politica">Política & Actualidad</a>
+    <a href="#tendencias">Tendencias & Tech</a>
+    <a href="#especializado">Especializado</a>
     <a href="https://www.campuslatinoamerica.edu.co" target="_blank">CampusLA Oficial</a>
   </nav>
 
   <!-- CONTENIDO PRINCIPAL -->
   <div class="main-container">
     
-    <!-- COLUMNA DE NOTICIAS -->
+    <!-- COLUMNA DE NOTICIAS (DINÁMICA DESDE EL DB) -->
     <main>
       
-      <!-- ARTÍCULO 8: TERREMOTO (URGENTE - LARGO Y ROBUSTO) -->
-      <section id="emergencia" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title" style="background: #dc3545;">🚨 Urgente Nacional</span>
-        </div>
-
-        <article class="news-card">
-          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb753d?w=1200" alt="Terremoto en Colombia">
-          <div class="news-body">
-            <span class="badge" style="background: #dc3545;">Emergencia Nacional</span>
-            <div class="news-date">10 de Agosto, 2026</div>
-            <h2 class="news-title">Colombia en Emergencia: Terremoto de 7.4 sacude el país</h2>
-            
-            <div class="news-content">
-              <h3>Situación Crítica en el Territorio Nacional</h3>
-              <p>El Servicio Geológico Colombiano ha confirmado que el sismo de magnitud 7.4 registrado a las 09:12 AM tuvo su epicentro en San José del Palmar, Chocó, con una profundidad superficial que intensificó la onda expansiva en varios departamentos del occidente y centro del país.</p>
-
-              <h3>Departamentos y Municipios Afectados</h3>
-              <ul>
-                <li><strong>Chocó:</strong> Epicentro del evento. San José del Palmar presenta colapso estructural en un porcentaje crítico del casco urbano y daños severos en vías terciarias.</li>
-                <li><strong>Valle del Cauca:</strong> Cali y municipios aledaños sintieron el movimiento con gran intensidad. Se reportan evacuaciones masivas en centros hospitalarios y fallas eléctricas en sectores comerciales.</li>
-                <li><strong>Risaralda y Caldas:</strong> Pereira y Manizales reportan daños en edificaciones de mampostería antigua y crisis nerviosas generalizadas. Se mantienen protocolos de inspección en estructuras altas.</li>
-                <li><strong>Antioquia:</strong> El occidente antioqueño registró movimientos sostenidos; equipos de gestión del riesgo evalúan posibles deslizamientos de tierra en zonas de ladera.</li>
-              </ul>
-
-              <h3>Balance Preliminar y Respuesta Oficial</h3>
-              <p>Las autoridades reportan de manera preliminar 111 fallecidos y 87 heridos. El Gobierno Nacional ha activado el Puesto de Mando Unificado (PMU) con carácter urgente. Las Fuerzas Militares y la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD) han desplegado grupos de búsqueda y rescate (SAR) hacia el Chocó, debido a la dificultad de acceso terrestre provocada por derrumbes.</p>
-
-              <p>Se hace un llamado a la ciudadanía en las zonas afectadas para mantener la calma, evitar el uso de ascensores, y reportar únicamente a las líneas de emergencia oficiales cualquier situación de riesgo inminente. Las instituciones educativas han suspendido actividades presenciales para proceder a la revisión de infraestructura física, buscando garantizar la integridad de la comunidad académica.</p>
-
-              <h3>Recomendaciones de Seguridad</h3>
-              <p>Se advierte sobre la alta probabilidad de réplicas en las próximas 48 horas. Es vital tener a mano el kit de emergencias, verificar que las llaves de gas estén cerradas y alejarse de fachadas con riesgo de desprendimiento. El monitoreo técnico continuará durante todo el día para actualizar el balance oficial de infraestructura afectada y víctimas.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- SECCIÓN 1: POLÍTICA & ACTUALIDAD -->
-      <section id="politica" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title">1. Política & Actualidad</span>
-        </div>
-
-        <article class="news-card">
-          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200" alt="Noticia Politica">
-          <div class="news-body">
-            <span class="badge">Política Nacional</span>
-            <div class="news-date">10 de Agosto, 2026</div>
-            <h2 class="news-title">Análisis de las Nuevas Políticas Educativas y Cambios Regulatorios</h2>
-            <div class="news-content">
-              <p>Un examen detallado a las reformas normativas que impactan el acceso a las universidades, certificaciones y homologación de estudios en el territorio nacional.</p>
-              <h3>Impacto en la Educación Superior</h3>
-              <p>Las directrices del Ministerio buscan modernizar los procesos de validación de saberes, permitiendo que profesionales con experiencia adquieran títulos oficiales bajo normativas simplificadas pero rigurosas.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- NOTA EDITORIAL NATIVA INTERCALADA -->
-      <div class="native-editorial-note">
-        <p><strong>Nota de la Redacción:</strong> Para estudiantes e investigadores interesados en la homologación de saberes o certificación de competencias universitarias, los criterios técnicos oficiales están disponibles directamente a través del portal de <a href="https://www.campuslatinoamerica.edu.co" target="_blank">CampusLA</a>.</p>
+      <!-- CONTENEDOR DE LECTURA COMPLETA (OCULTO POR DEFECTO, SE ABRE AL DAR CLIC EN LEER) -->
+      <div id="full-article-view" class="full-article-container">
+        <button class="back-btn" onclick="volverAlInicio()">← Volver a Noticias</button>
+        <div id="article-content-target"></div>
       </div>
 
-      <!-- SECCIÓN 2: TENDENCIAS & TECNOLOGÍA -->
-      <section id="tendencias" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title" style="background: var(--brand-green);">2. Tendencias & Tech</span>
-        </div>
-
-        <article class="news-card">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="Tendencias Tech">
-          <div class="news-body">
-            <span class="badge">Tendencias</span>
-            <div class="news-date">9 de Agosto, 2026</div>
-            <h2 class="news-title">El Impacto de la Inteligencia Artificial y Simuladores en Exámenes Oficiales</h2>
-            <div class="news-content">
-              <p>Cómo la automatización y el aprendizaje interactivo están revolucionando la preparación académica de los estudiantes hoy en día en plataformas virtuales de alta exigencia.</p>
-              <h3>Herramientas de Simulación Avanzada</h3>
-              <p>La incorporación de entornos virtuales adaptativos permite medir el nivel de competencia de los aspirantes en tiempo real, optimizando los tiempos de estudio y garantizando altos porcentajes de aprobación en pruebas estandarizadas como TOEFL y exámenes de estado.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- SECCIÓN 3: ESPECIALIZADO & EDUCACIÓN -->
-      <section id="especializado" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title" style="background: #222;">3. Especializado & Educación</span>
-        </div>
-
-        <article class="news-card">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="Especializado Legal">
-          <div class="news-body">
-            <span class="badge" style="background: var(--primary);">Especializado</span>
-            <div class="news-date">8 de Agosto, 2026</div>
-            <h2 class="news-title">Guía Técnica de Homologación de Títulos y Asesoría Legal Estudiantil</h2>
-            <div class="news-content">
-              <p>Paso a paso sobre cómo gestionar disputas académicas, convalidaciones y requisitos para validar tus competencias de forma legal ante las entidades competentes.</p>
-              <h3>Requisitos Esenciales</h3>
-              <p>Conoce la documentación necesaria, los tiempos estimados de respuesta institucional y los canales oficiales habilitados para evitar fraudes o intermediarios no autorizados en el proceso de convalidación.</p>
-            </div>
-          </div>
-        </article>
-      </section>
+      <!-- LISTADO DE TARJETAS (SE LLENA CON JS) -->
+      <div id="news-feed-view">
+        <section class="section-header">
+          <span class="section-title">Últimas Publicaciones & Urgentes</span>
+        </section>
+        <div id="noticias-container"></div>
+      </div>
 
     </main>
 
@@ -268,7 +182,7 @@
 
   </div>
 
-  <!-- DIRECTORIO DE PAUTA SILENCIOSA (5 ESPACIOS) -->
+  <!-- DIRECTORIO DE PAUTA SILENCIOSA -->
   <section class="native-partners-container">
     <div class="partners-header">
       <div class="partners-title">Directorio de Alianzas & Socios Editoriales</div>
@@ -276,42 +190,31 @@
     </div>
 
     <div class="partners-grid">
-      
-      <!-- MARCA 1: CAMPUSLA -->
       <div class="partner-item active">
         <strong>🎓 CampusLA</strong>
         <p style="color:#666; font-size:0.75rem;">Servicios de orientación y certificación.</p>
         <a href="https://www.campuslatinoamerica.edu.co" target="_blank">Saber más →</a>
       </div>
-
-      <!-- MARCA 2: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
-
-      <!-- MARCA 3: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
-
-      <!-- MARCA 4: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
-
-      <!-- MARCA 5: PAUTA SILENCIOSA -->
       <div class="partner-item">
         <strong>Espacio Editorial</strong>
         <p style="color:#666; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
         <a href="#">Pauta tu marca aquí →</a>
       </div>
-
     </div>
   </section>
 
@@ -325,5 +228,125 @@
     </p>
   </footer>
 
+  <!-- MOTOR DE JAVASCRIPT DINÁMICO (BASE DE DATOS Y MODAL DE LECTURA) -->
+  <script>
+    const noticiasDB = {
+      'art-8': {
+        title: "Colombia en Emergencia: Terremoto de 7.4 sacude el país",
+        badge: "Emergencia Nacional",
+        date: "10 de Agosto, 2026",
+        img: "https://images.unsplash.com/photo-1596495577886-d920f1fb753d?w=800",
+        excerpt: "El Servicio Geológico Colombiano confirmó sismo de magnitud 7.4 con epicentro en San José del Palmar, Chocó. Hay alerta nacional y despliegue del PMU.",
+        content: `
+          <span class="badge" style="background: #dc3545;">Emergencia Nacional</span>
+          <div style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 12px 0; font-weight: 600;">10 de Agosto, 2026</div>
+          <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 15px;">Colombia en Emergencia: Terremoto de 7.4 sacude el país</h2>
+          <div class="full-article-content">
+            <h3>Situación Crítica en el Territorio Nacional</h3>
+            <p>El Servicio Geológico Colombiano ha confirmado que el sismo de magnitud 7.4 registrado a las 09:12 AM tuvo su epicentro en San José del Palmar, Chocó, con una profundidad superficial que intensificó la onda expansiva en varios departamentos del occidente y centro del país.</p>
+
+            <h3>Departamentos y Municipios Afectados</h3>
+            <ul>
+                <li><strong>Chocó:</strong> Epicentro del evento. San José del Palmar presenta colapso estructural en un porcentaje crítico del casco urbano y daños severos en vías terciarias.</li>
+                <li><strong>Valle del Cauca:</strong> Cali y municipios aledaños sintieron el movimiento con gran intensidad. Se reportan evacuaciones masivas en centros hospitalarios y fallas eléctricas en sectores comerciales.</li>
+                <li><strong>Risaralda y Caldas:</strong> Pereira y Manizales reportan daños en edificaciones de mampostería antigua y crisis nerviosas generalizadas. Se mantienen protocolos de inspección en estructuras altas.</li>
+                <li><strong>Antioquia:</strong> El occidente antioqueño registró movimientos sostenidos; equipos de gestión del riesgo evalúan posibles deslizamientos de tierra en zonas de ladera.</li>
+            </ul>
+
+            <h3>Protocolos y Respuesta Oficial</h3>
+            <p>El Gobierno Nacional ha activado el Puesto de Mando Unificado (PMU) con carácter urgente. Las Fuerzas Militares y la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD) han desplegado grupos de búsqueda y rescate (SAR) hacia el Chocó, debido a la dificultad de acceso terrestre provocada por derrumbes.</p>
+
+            <p>Se hace un llamado a la ciudadanía en las zonas afectadas para mantener la calma, evitar el uso de ascensores, y reportar únicamente a las líneas de emergencia oficiales cualquier situación de riesgo inminente. Las instituciones educativas han suspendido actividades presenciales para proceder a la revisión de infraestructura física, buscando garantizar la integridad de la comunidad académica.</p>
+
+            <h3>Recomendaciones de Seguridad</h3>
+            <p>Se advierte sobre la alta probabilidad de réplicas en las próximas 48 horas. Es vital tener a mano el kit de emergencias, verificar que las llaves de gas estén cerradas y alejarse de fachadas con riesgo de desprendimiento.</p>
+          </div>
+        `
+      },
+      'art-7': {
+        title: "Posesión de Abelardo y Nuevos Retos Administrativos en Cali",
+        badge: "Política Regional",
+        date: "9 de Agosto, 2026",
+        img: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800",
+        excerpt: "Con una masiva asistencia y compromisos enfocados en seguridad y reactivación económica, se llevó a cabo la posesión oficial en la capital del Valle.",
+        content: `
+          <span class="badge">Política Regional</span>
+          <div style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 12px 0; font-weight: 600;">9 de Agosto, 2026</div>
+          <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 15px;">Posesión de Abelardo y Nuevos Retos Administrativos en Cali</h2>
+          <div class="full-article-content">
+            <h3>Un Nuevo Capítulo para el Valle</h3>
+            <p>En una ceremonia protocolaria que congregó a diversos sectores políticos, gremiales y académicos de la región, se oficializó la posesión de Abelardo, marcando el inicio de una agenda centrada en la transformación institucional y el fortalecimiento de la seguridad ciudadana.</p>
+
+            <h3>Ejes Clave de la Administración</h3>
+            <ul>
+                <li><strong>Seguridad y Orden Público:</strong> Implementación de nuevas tecnologías de vigilancia y coordinación directa con la fuerza pública.</li>
+                <li><strong>Reactivación Económica:</strong> Estímulos para la pequeña y mediana empresa, apoyando el emprendimiento local.</li>
+                <li><strong>Alianzas Educativas:</strong> Apertura de convenios con instituciones del sector para mejorar la cobertura técnica y tecnológica en jóvenes.</li>
+            </ul>
+
+            <p>Analistas coinciden en que los primeros 100 días serán fundamentales para medir el impacto de las nuevas directrices en los sectores más vulnerables de la ciudad.</p>
+          </div>
+        `
+      },
+      'art-1': {
+        title: "Análisis de las Nuevas Políticas Educativas y Cambios Regulatorios",
+        badge: "Política Nacional",
+        date: "8 de Agosto, 2026",
+        img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+        excerpt: "Un examen detallado a las reformas normativas que impactan el acceso a las universidades, certificaciones y homologación de estudios en LATAM.",
+        content: `
+          <span class="badge">Política Nacional</span>
+          <div style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 12px 0; font-weight: 600;">8 de Agosto, 2026</div>
+          <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 15px;">Análisis de las Nuevas Políticas Educativas y Cambios Regulatorios</h2>
+          <div class="full-article-content">
+            <h3>Transformación Normativa</h3>
+            <p>Las directrices emitidas por los entes reguladores buscan simplificar los trámites de convalidación y potenciar la educación virtual acreditada en todo el país.</p>
+            <h3>Impacto Estudiantil</h3>
+            <p>Los estudiantes se beneficiarán de procesos más ágiles, reduciendo tiempos de espera y estandarizando requisitos para títulos obtenidos en el extranjero o mediante modalidades híbridas.</p>
+          </div>
+        `
+      }
+    };
+
+    function renderizarFeed() {
+      const container = document.getElementById('noticias-container');
+      container.innerHTML = '';
+
+      for (let id in noticiasDB) {
+        let item = noticiasDB[id];
+        container.innerHTML += `
+          <article class="news-card">
+            <img src="${item.img}" alt="${item.title}">
+            <div class="news-body">
+              <span class="badge">${item.badge}</span>
+              <div style="font-size:0.75rem; color:#6b7280; margin-top:5px; font-weight:600;">${item.date}</div>
+              <h2 class="news-title">${item.title}</h2>
+              <p class="news-excerpt">${item.excerpt}</p>
+              <button class="btn-read" onclick="leerNoticia('${id}')">Leer Noticia Completa →</button>
+            </div>
+          </article>
+        `;
+      }
+    }
+
+    function leerNoticia(id) {
+      const noticia = noticiasDB[id];
+      if (!noticia) return;
+
+      document.getElementById('article-content-target').innerHTML = noticia.content;
+      document.getElementById('news-feed-view').style.display = 'none';
+      document.getElementById('full-article-view').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAlInicio() {
+      document.getElementById('full-article-view').classList.remove('active');
+      document.getElementById('news-feed-view').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Cargar las noticias al iniciar la página
+    window.onload = renderizarFeed;
+  </script>
 </body>
 </html>
