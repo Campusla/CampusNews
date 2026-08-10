@@ -32,7 +32,6 @@
 
   <title>CampusNews | El Portal de Noticias de CampusLA</title>
 </head>
-</head>
 
   <!-- GOOGLE ANALYTICS 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3DWWPFEC3"></script>
@@ -219,288 +218,26 @@
         content: `<p>El panorama de la competitividad laboral internacional ha llevado a las instituciones de educación superior a elevar el estándar de egreso. Actualmente, más del 80% de las universidades en la región han estandarizado la obligatoriedad de presentar certificaciones internacionales de nivel B2 o C1 (según el Marco Común Europeo) para obtener el título profesional y acceder a becas de movilidad internacional.</p>
         <p>Esta medida, si bien desafiante para muchos estudiantes, responde a la necesidad de garantizar que los profesionales latinoamericanos puedan integrarse con éxito en economías globales donde el inglés es la lengua franca de la ciencia, la tecnología y el comercio. Las universidades están acompañando esta exigencia con centros de lenguas robustos y convenios para que los estudiantes preparen sus exámenes con simuladores oficiales.</p>
         <p>La recomendación para los estudiantes de pregrado es iniciar el proceso de preparación y certificación desde los primeros semestres. Las oportunidades que se abren para aquellos que poseen un nivel C1 son exponenciales, abriendo puertas tanto en programas de posgrado de élite como en el mercado laboral transnacional que busca talento altamente calificado y con habilidades comunicativas globales.</p>`
+      },,
+
+      'art-7': {
+        title: "Abelardo de la Espriella asume la Presidencia de Colombia y comienza el periodo 2026-2030",
+        img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
+        date: "7 de Agosto, 2026",
+        content: `<p>Colombia inició el 7 de agosto de 2026 un nuevo periodo presidencial, con Abelardo de la Espriella como jefe de Estado para el periodo constitucional 2026-2030.</p>
+        <p>La nueva administración enfrenta entre sus primeros desafíos la puesta en marcha de su agenda de gobierno, la definición de prioridades económicas y sociales y la coordinación con las entidades territoriales.</p>
+        <p><strong>Nota editorial:</strong> Esta información corresponde al contexto político publicado previamente por CampusNews y debe actualizarse conforme se produzcan nuevos anuncios oficiales.</p>`
       },
-    
-    function openArticleModal(artId) {
-      const data = noticiasDB[artId];
-      if (data) {
-        document.getElementById('article-modal-img').src = data.img;
-        document.getElementById('article-modal-title').innerText = data.title;
-        document.getElementById('article-modal-date').innerText = data.date;
-        document.getElementById('article-modal-content').innerHTML = data.content;
-        document.getElementById('modal-noticia').style.display = 'flex';
+
+      'art-8': {
+        title: "Terremoto de magnitud 7,4 sacude el occidente de Colombia y activa la respuesta de emergencia",
+        img: "https://images.unsplash.com/photo-1596495577886-d920f1fb753d?w=800",
+        date: "10 de Agosto, 2026",
+        content: `<p>Un terremoto de magnitud 7,4 sacudió el occidente de Colombia durante la mañana del lunes 10 de agosto de 2026. Los reportes disponibles ubican el epicentro en las inmediaciones de San José del Palmar, Chocó, y señalan que el movimiento fue percibido en amplias zonas del país.</p>
+        <p>Los primeros balances publicados durante la jornada reportaron víctimas mortales, personas heridas y daños estructurales en distintos municipios. Las cifras son preliminares y pueden cambiar mientras continúan las labores de búsqueda, rescate y evaluación de daños.</p>
+        <p>La respuesta de las autoridades se concentra en la atención de las comunidades afectadas, la evaluación de infraestructura y las operaciones de rescate. Para actualizaciones sísmicas y reportes oficiales, se recomienda consultar directamente al Servicio Geológico Colombiano.</p>
+        <p><strong>Fuentes consultadas:</strong> Servicio Geológico Colombiano, Reuters y Associated Press, con información disponible al 10 de agosto de 2026. <a href="https://www.sgc.gov.co/sismos" target="_blank" rel="noopener">Consultar el visor oficial del SGC →</a></p>`
       }
-    }
+    };
 
-    function openModal(modalId) { document.getElementById(modalId).style.display = 'flex'; }
-    function closeModal(modalId) { document.getElementById(modalId).style.display = 'none'; }
-    window.onclick = function(e) { if (e.target.classList.contains('modal-overlay')) e.target.style.display = 'none'; }
-  </script>
-
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TP9SK733"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-  <!-- CINTA NATIVA -->
-  <div class="native-top-bar">
-    <div class="native-bar-content">
-      <div>
-        <span class="native-tag">AVISO INSTITUCIONAL</span>
-        <span style="margin-left: 5px;">Procesos de validación académica y convalidación de títulos en LATAM.</span>
-      </div>
-      <div>
-        <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener" class="native-link">Consultar en CampusLA →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- HEADER -->
-  <header>
-    <div class="brand-title">CAMPUS<span>NEWS</span></div>
-    <div class="tagline">Análisis, Tendencias e Información Oficial | Red CampusLA</div>
-  </header>
-
-  <!-- NAVEGACIÓN -->
-  <nav aria-label="Navegación principal">
-    <a href="#politica">1. Política & Actualidad</a>
-    <a href="#tendencias">2. Tendencias & Tech</a>
-    <a href="#especializado">3. Especializado & Educación</a>
-    <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener">CampusLA Oficial</a>
-  </nav>
-
-  <!-- ADSENSE SUPERIOR -->
-  <div class="adsense-wrapper">
-    <ins class="adsbygoogle"
-         style="display:block; width:100%; height:90px;"
-         data-ad-client="ca-pub-6695776573862698"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="main-container">
-    
-    <main id="news-feed">
-      
-      <!-- SECCIÓN 1 -->
-      <section id="politica" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title">1. Política & Actualidad</span>
-        </div>
-<article class="news-card" data-estado="publicado">
-  <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb753d?w=800" alt="Terremoto" width="800" height="260" loading="lazy">
-  <div class="news-body">
-    <span class="badge badge-today">ÚLTIMA HORA</span>
-    <h2 class="news-title">Colombia en Emergencia: Terremoto de 7.4 sacude el país</h2>
-    <p class="news-excerpt">Reporte oficial tras el sismo de magnitud 7.4 con epicentro en el Chocó.</p>
-    <button class="btn-read" onclick="openArticleModal('art-8')">Leer Noticia Completa →</button>
-  </div>
-</article>
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800" alt="Cali transporte y ciudad" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge badge-today">ÚLTIMA HORA</span>
-            <h2 class="news-title">Cali es el centro de la historia: Abelardo de la Espriella asume la Presidencia de Colombia</h2>
-            <p class="news-excerpt">Inicia el periodo constitucional 2026-2030. Por primera vez en la historia reciente, el acto de transmisión de mando se realiza fuera de Bogotá, consolidando un mensaje de descentralización.</p>
-            <button class="btn-read" onclick="openArticleModal('art-7')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800" alt="ICETEX educación" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge">POLÍTICA & ACTUALIDAD</span>
-            <h2 class="news-title">Ministerio de Educación e ICETEX anuncian nuevas convocatorias para subsidios de tasa y sostenibilidad</h2>
-            <p class="news-excerpt">A pocos días del cambio legislativo de agosto, las autoridades educativas formalizan un paquete de alivios financieros dirigidos a estudiantes de pregrado en condiciones de vulnerabilidad socioeconómica.</p>
-            <button class="btn-read" onclick="openArticleModal('art-4')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Posesión Presidencial Colombia" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge">POLÍTICA & ACTUALIDAD</span>
-            <h2 class="news-title">Colombia se prepara para la posesión presidencial del 7 de agosto y los retos en educación superior</h2>
-            <p class="news-excerpt">A pocos días de la tradicional ceremonia de posesión presidencial este 7 de agosto, el país centra su atención en los nombramientos clave de gabinete y las primeras reformas que se radicarán ante el Congreso.</p>
-            <button class="btn-read" onclick="openArticleModal('art-1')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-      </section>
-
-      <div class="native-editorial-note">
-        <p><strong>Nota de la Redacción:</strong> Para estudiantes e investigadores interesados en la homologación de saberes o certificación de competencias universitarias, los criterios técnicos oficiales están disponibles directamente a través del portal de <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener">CampusLA</a>.</p>
-      </div>
-
-      <!-- SECCIÓN 2 -->
-      <section id="tendencias" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title" style="background: var(--brand-green);">2. Tendencias & Tech</span>
-        </div>
-
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" alt="OpenAI Agentes Educativos" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge badge-today">TENDENCIA TECH</span>
-            <h2 class="news-title">El impacto de los 'Agentes Inteligentes' en la evaluación y tutoría de la educación universitaria</h2>
-            <p class="news-excerpt">Las plataformas de IA generativa han evolucionado hacia asistentes contextuales capaces de evaluar ensayos complejos, código informático y exámenes de idiomas con un nivel de retroalimentación personalizado sin precedentes.</p>
-            <button class="btn-read" onclick="openArticleModal('art-5')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="IA en Idiomas" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge">TENDENCIAS & TECH</span>
-            <h2 class="news-title">Cómo la Inteligencia Artificial está revolucionando el aprendizaje de idiomas de forma especializada</h2>
-            <p class="news-excerpt">El aprendizaje de segundas y terceras lenguas ha dado un giro definitivo gracias a la integración de modelos de inteligencia artificial adaptativa en las aulas y plataformas digitales.</p>
-            <button class="btn-read" onclick="openArticleModal('art-2')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-      </section>
-
-      <!-- SECCIÓN 3 -->
-      <section id="especializado" style="margin-bottom: 30px;">
-        <div class="section-header">
-          <span class="section-title" style="background: #111827;">3. Especializado & Educación</span>
-        </div>
-
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800" alt="Saber Pro e Idiomas B2" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge badge-today">EDUCACIÓN & EXÁMENES</span>
-            <h2 class="news-title">Aumenta la exigencia de certificaciones B2/C1 para opciones de grado y becas internacionales en 2026</h2>
-            <p class="news-excerpt">Un reciente consolidado de la red de universidades latinoamericanas confirma que más del 80% de las instituciones han estandarizado la exigencia de exámenes estandarizados internacionales para procesos de titulación y movilidad.</p>
-            <button class="btn-read" onclick="openArticleModal('art-6')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-
-        <article class="news-card" data-estado="publicado">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="TOEFL iBT Reestructuración" width="800" height="260" loading="lazy">
-          <div class="news-body">
-            <span class="badge">ESPECIALIZADO & EDUCACIÓN</span>
-            <h2 class="news-title">El examen TOEFL iBT se reestructura: ahora es más corto, ágil y amigable para los estudiantes</h2>
-            <p class="news-excerpt">En respuesta al entorno académico moderno, ETS ha implementado una reestructuración profunda en el examen TOEFL iBT, haciendo la certificación más eficiente.</p>
-            <button class="btn-read" onclick="openArticleModal('art-3')">Leer Noticia Completa →</button>
-          </div>
-        </article>
-      </section>
-
-    </main>
-
-    <!-- SIDEBAR -->
-    <aside>
-      <div class="sidebar-widget">
-        <div class="sidebar-title">📺 Canal Oficial YouTube</div>
-        <div class="video-responsive">
-          <iframe src="https://www.youtube.com/embed/t6cGCMwkvOE" title="CampusLA Video Oficial" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="sidebar-widget">
-        <div class="sidebar-title">Síguenos</div>
-        <div class="social-links">
-          <a href="https://www.facebook.com/profile.php?id=100013260212952" target="_blank" rel="noopener" class="social-btn">📘 Facebook</a>
-          <a href="https://www.instagram.com/confesionescampusuniversi/" target="_blank" rel="noopener" class="social-btn">📸 Instagram</a>
-          <a href="https://www.tiktok.com/@aprendegratismarty?lang=es" target="_blank" rel="noopener" class="social-btn">🎵 TikTok</a>
-          <a href="https://www.youtube.com/channel/UCvfCiF08p5G48Z5WTNOzeyQ" target="_blank" rel="noopener" class="social-btn">▶ YouTube</a>
-        </div>
-      </div>
-    </aside>
-
-  </div>
-
-  <!-- DIRECTORIO -->
-  <section class="native-partners-container">
-    <div class="partners-header">
-      <div class="partners-title">Directorio de Alianzas & Socios Editoriales</div>
-      <div class="partners-subtle-tag">👁️ Miles de ojos verán tu marca</div>
-    </div>
-
-    <div class="partners-grid">
-      <div class="partner-item active">
-        <strong>🎓 CampusLA</strong>
-        <p style="color:#374151; font-size:0.75rem;">Servicios de orientación y certificación.</p>
-        <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener">Saber más →</a>
-      </div>
-
-      <div class="partner-item">
-        <strong>Espacio Editorial</strong>
-        <p style="color:#374151; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
-        <a href="#">Pauta tu marca aquí →</a>
-      </div>
-
-      <div class="partner-item">
-        <strong>Espacio Editorial</strong>
-        <p style="color:#374151; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
-        <a href="#">Pauta tu marca aquí →</a>
-      </div>
-
-      <div class="partner-item">
-        <strong>Espacio Editorial</strong>
-        <p style="color:#374151; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
-        <a href="#">Pauta tu marca aquí →</a>
-      </div>
-
-      <div class="partner-item">
-        <strong>Espacio Editorial</strong>
-        <p style="color:#374151; font-size:0.75rem;">Aviso patrocinado o mención de marca.</p>
-        <a href="#">Pauta tu marca aquí →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 CampusNews | Una iniciativa de CampusLA</p>
-    <p style="margin-top: 10px;">
-      <button onclick="openModal('modal-nosotros')">Quiénes Somos</button> | 
-      <button onclick="openModal('modal-privacidad')">Política de Privacidad</button> | 
-      <button onclick="openModal('modal-contacto')">Contacto Prensa</button> | 
-      <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener">www.campuslatinoamerica.edu.co</a> | 
-      <a href="/admin/">Acceso CMS / Editar Noticias</a>
-    </p>
-  </footer>
-
-  <!-- MODALES -->
-  <div id="modal-noticia" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-card">
-      <button class="close-btn" onclick="closeModal('modal-noticia')" aria-label="Cerrar modal">&times;</button>
-      <img id="article-modal-img" class="article-modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Imagen Noticia" width="600" height="280">
-      <h2 id="article-modal-title">Cargando Noticia...</h2>
-      <div class="article-meta">
-        Publicado por <strong>Redacción CampusNews</strong> | <span id="article-modal-date">7 de Agosto, 2026</span>
-      </div>
-      <div id="article-modal-content"></div>
-    </div>
-  </div>
-
-  <div id="modal-nosotros" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-card">
-      <button class="close-btn" onclick="closeModal('modal-nosotros')" aria-label="Cerrar modal">&times;</button>
-      <h2>Quiénes Somos</h2>
-      <p><strong>CampusNews</strong> es el portal informativo oficial de <strong>CampusLA (Campus Latinoamérica)</strong>.</p>
-      <p>Conoce más en nuestro sitio oficial: <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener">www.campuslatinoamerica.edu.co</a>.</p>
-    </div>
-  </div>
-
-  <div id="modal-contacto" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-card">
-      <button class="close-btn" onclick="closeModal('modal-contacto')" aria-label="Cerrar modal">&times;</button>
-      <h2>Contacto & Redacción</h2>
-      <p>Plataforma Oficial: <a href="https://www.campuslatinoamerica.edu.co" target="_blank" rel="noopener">www.campuslatinoamerica.edu.co</a></p>
-    </div>
-  </div>
-
-  <div id="modal-privacidad" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-card">
-      <button class="close-btn" onclick="closeModal('modal-privacidad')" aria-label="Cerrar modal">&times;</button>
-      <h2>Política de Privacidad</h2>
-      <p>En <strong>CampusNews</strong> garantizamos la protección de sus datos personales conforme a los estándares de privacidad digital.</p>
-    </div>
-  </div>
-
-</body>
-</html>
+    function openArticleModal(artId) {
