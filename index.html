@@ -4,15 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- PRECONNECT PARA <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <!-- SEO ALTO NIVEL & GOOGLE DISCOVER -->
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="description" content="Portal oficial de noticias, análisis académico, política y tendencias de CampusLA.">
+  <meta name="description" content="Portal oficial de noticias, análisis académico, política, tendencias y cobertura de emergencias de CampusLA.">
   
   <title>CampusNews | El Portal de Noticias de CampusLA</title>
 
@@ -39,7 +33,7 @@
     .native-tag { background: rgba(40, 167, 69, 0.2); color: var(--brand-green); padding: 2px 8px; border-radius: 3px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
     .native-link { color: #fff; text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--brand-green); }
 
-    /* HEADER INSTITUCIONAL (DISEÑO #2) */
+    /* HEADER INSTITUCIONAL */
     header { background-color: var(--primary); color: var(--white); padding: 25px 15px; text-align: center; border-bottom: 5px solid var(--brand-green); }
     .brand-title { font-size: 2.5rem; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; }
     .brand-title span { color: var(--brand-green); }
@@ -54,34 +48,36 @@
     .main-container { max-width: 1150px; margin: 25px auto; padding: 0 15px; display: grid; grid-template-columns: 2.2fr 1fr; gap: 25px; }
     @media (max-width: 850px) { .main-container { grid-template-columns: 1fr; } }
 
-    /* SECCIONES DE NOTICIAS (DISEÑO #2) */
+    /* SECCIONES */
     .section-header { border-bottom: 3px solid var(--primary); margin-bottom: 20px; }
     .section-title { background: var(--primary); color: var(--white); padding: 5px 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; display: inline-block; }
 
-    /* TARJETA DE NOTICIA (ESTILO ROBUSTO DISEÑO #2) */
+    /* TARJETA DE NOTICIA ROBUSTA */
     .news-card { background: var(--white); border-radius: 8px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; }
-    .news-card img { width: 100%; height: 260px; object-fit: cover; }
-    .news-body { padding: 20px; }
+    .news-card img { width: 100%; height: 280px; object-fit: cover; }
+    .news-body { padding: 25px; }
     .badge { background: var(--brand-green); color: var(--white); padding: 3px 8px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; border-radius: 3px; }
-    .news-title { font-size: 1.4rem; color: var(--primary); margin: 10px 0; font-weight: 700; line-height: 1.3; }
-    .news-excerpt { color: #555; font-size: 0.95rem; margin-bottom: 15px; }
-    .btn-read { display: inline-block; background: var(--primary); color: var(--white); padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.85rem; }
-    .btn-read:hover { background: #002244; }
+    .news-title { font-size: 1.5rem; color: var(--primary); margin: 12px 0; font-weight: 700; line-height: 1.3; }
+    .news-date { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; font-weight: 600; }
+    
+    /* ESTILOS INTERNOS PARA TEXTOS LARGOS DE UNA PÁGINA */
+    .news-content p { margin-bottom: 15px; color: #374151; font-size: 1rem; line-height: 1.7; }
+    .news-content h3 { font-size: 1.2rem; color: var(--primary); margin: 20px 0 10px 0; font-weight: 700; border-left: 3px solid var(--brand-green); padding-left: 10px; }
+    .news-content ul { margin: 15px 0 15px 20px; color: #374151; }
+    .news-content li { margin-bottom: 8px; line-height: 1.6; }
 
-    /* NOTA EDITORIAL NATIVA INTERCALADA */
-    .native-editorial-note { background: #ffffff; border-left: 4px solid var(--primary); padding: 15px 20px; margin: 25px 0; border: 1px solid var(--border-color); border-left: 4px solid var(--primary); border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+    /* NOTA EDITORIAL NATIVA */
+    .native-editorial-note { background: #ffffff; border-left: 4px solid var(--primary); padding: 15px 20px; margin: 25px 0; border: 1px solid var(--border-color); border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
     .native-editorial-note p { font-size: 0.9rem; color: #374151; }
     .native-editorial-note a { color: var(--primary); font-weight: 700; text-decoration: none; }
 
-    /* SIDEBAR (DISEÑO #2) */
+    /* SIDEBAR */
     .sidebar-widget { background: var(--white); padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; }
     .sidebar-title { font-size: 1.1rem; font-weight: 800; border-bottom: 2px solid var(--brand-green); padding-bottom: 8px; margin-bottom: 15px; color: var(--primary); text-transform: uppercase; }
     
-    /* REPRODUCTOR YOUTUBE RESPONSIVO CORREGIDO CON TU VIDEO */
     .video-responsive { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000; }
     .video-responsive iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-    /* REDES SOCIALES */
     .social-links { display: flex; flex-direction: column; gap: 8px; }
     .social-btn { padding: 8px 12px; background: var(--light); color: var(--dark); text-decoration: none; border-radius: 4px; font-weight: 700; font-size: 0.85rem; border: 1px solid #ddd; transition: all 0.2s; }
     .social-btn:hover { background: var(--primary); color: var(--white); }
@@ -118,7 +114,7 @@
     </div>
   </div>
 
-  <!-- HEADER INSTITUCIONAL (DISEÑO #2) -->
+  <!-- HEADER INSTITUCIONAL -->
   <header>
     <div class="brand-title">CAMPUS<span>NEWS</span></div>
     <div class="tagline">Análisis, Tendencias e Información Oficial | Red CampusLA</div>
@@ -126,6 +122,7 @@
 
   <!-- NAVEGACIÓN PRINCIPAL -->
   <nav>
+    <a href="#emergencia">🚨 Última Hora: Emergencia</a>
     <a href="#politica">1. Política & Actualidad</a>
     <a href="#tendencias">2. Tendencias & Tech</a>
     <a href="#especializado">3. Especializado & Educación</a>
@@ -138,6 +135,43 @@
     <!-- COLUMNA DE NOTICIAS -->
     <main>
       
+      <!-- ARTÍCULO 8: TERREMOTO (URGENTE - LARGO Y ROBUSTO) -->
+      <section id="emergencia" style="margin-bottom: 30px;">
+        <div class="section-header">
+          <span class="section-title" style="background: #dc3545;">🚨 Urgente Nacional</span>
+        </div>
+
+        <article class="news-card">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb753d?w=1200" alt="Terremoto en Colombia">
+          <div class="news-body">
+            <span class="badge" style="background: #dc3545;">Emergencia Nacional</span>
+            <div class="news-date">10 de Agosto, 2026</div>
+            <h2 class="news-title">Colombia en Emergencia: Terremoto de 7.4 sacude el país</h2>
+            
+            <div class="news-content">
+              <h3>Situación Crítica en el Territorio Nacional</h3>
+              <p>El Servicio Geológico Colombiano ha confirmado que el sismo de magnitud 7.4 registrado a las 09:12 AM tuvo su epicentro en San José del Palmar, Chocó, con una profundidad superficial que intensificó la onda expansiva en varios departamentos del occidente y centro del país.</p>
+
+              <h3>Departamentos y Municipios Afectados</h3>
+              <ul>
+                <li><strong>Chocó:</strong> Epicentro del evento. San José del Palmar presenta colapso estructural en un porcentaje crítico del casco urbano y daños severos en vías terciarias.</li>
+                <li><strong>Valle del Cauca:</strong> Cali y municipios aledaños sintieron el movimiento con gran intensidad. Se reportan evacuaciones masivas en centros hospitalarios y fallas eléctricas en sectores comerciales.</li>
+                <li><strong>Risaralda y Caldas:</strong> Pereira y Manizales reportan daños en edificaciones de mampostería antigua y crisis nerviosas generalizadas. Se mantienen protocolos de inspección en estructuras altas.</li>
+                <li><strong>Antioquia:</strong> El occidente antioqueño registró movimientos sostenidos; equipos de gestión del riesgo evalúan posibles deslizamientos de tierra en zonas de ladera.</li>
+              </ul>
+
+              <h3>Balance Preliminar y Respuesta Oficial</h3>
+              <p>Las autoridades reportan de manera preliminar 111 fallecidos y 87 heridos. El Gobierno Nacional ha activado el Puesto de Mando Unificado (PMU) con carácter urgente. Las Fuerzas Militares y la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD) han desplegado grupos de búsqueda y rescate (SAR) hacia el Chocó, debido a la dificultad de acceso terrestre provocada por derrumbes.</p>
+
+              <p>Se hace un llamado a la ciudadanía en las zonas afectadas para mantener la calma, evitar el uso de ascensores, y reportar únicamente a las líneas de emergencia oficiales cualquier situación de riesgo inminente. Las instituciones educativas han suspendido actividades presenciales para proceder a la revisión de infraestructura física, buscando garantizar la integridad de la comunidad académica.</p>
+
+              <h3>Recomendaciones de Seguridad</h3>
+              <p>Se advierte sobre la alta probabilidad de réplicas en las próximas 48 horas. Es vital tener a mano el kit de emergencias, verificar que las llaves de gas estén cerradas y alejarse de fachadas con riesgo de desprendimiento. El monitoreo técnico continuará durante todo el día para actualizar el balance oficial de infraestructura afectada y víctimas.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <!-- SECCIÓN 1: POLÍTICA & ACTUALIDAD -->
       <section id="politica" style="margin-bottom: 30px;">
         <div class="section-header">
@@ -148,9 +182,13 @@
           <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200" alt="Noticia Politica">
           <div class="news-body">
             <span class="badge">Política Nacional</span>
+            <div class="news-date">10 de Agosto, 2026</div>
             <h2 class="news-title">Análisis de las Nuevas Políticas Educativas y Cambios Regulatorios</h2>
-            <p class="news-excerpt">Un examen detallado a las reformas normativas que impactan el acceso a las universidades, certificaciones y homologación de estudios.</p>
-            <a href="#" class="btn-read">Leer Noticia Completa →</a>
+            <div class="news-content">
+              <p>Un examen detallado a las reformas normativas que impactan el acceso a las universidades, certificaciones y homologación de estudios en el territorio nacional.</p>
+              <h3>Impacto en la Educación Superior</h3>
+              <p>Las directrices del Ministerio buscan modernizar los procesos de validación de saberes, permitiendo que profesionales con experiencia adquieran títulos oficiales bajo normativas simplificadas pero rigurosas.</p>
+            </div>
           </div>
         </article>
       </section>
@@ -170,9 +208,13 @@
           <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" alt="Tendencias Tech">
           <div class="news-body">
             <span class="badge">Tendencias</span>
+            <div class="news-date">9 de Agosto, 2026</div>
             <h2 class="news-title">El Impacto de la Inteligencia Artificial y Simuladores en Exámenes Oficiales</h2>
-            <p class="news-excerpt">Cómo la automatización y el aprendizaje interactivo están revolucionando la preparación académica de los estudiantes hoy.</p>
-            <a href="#" class="btn-read">Leer Noticia Completa →</a>
+            <div class="news-content">
+              <p>Cómo la automatización y el aprendizaje interactivo están revolucionando la preparación académica de los estudiantes hoy en día en plataformas virtuales de alta exigencia.</p>
+              <h3>Herramientas de Simulación Avanzada</h3>
+              <p>La incorporación de entornos virtuales adaptativos permite medir el nivel de competencia de los aspirantes en tiempo real, optimizando los tiempos de estudio y garantizando altos porcentajes de aprobación en pruebas estandarizadas como TOEFL y exámenes de estado.</p>
+            </div>
           </div>
         </article>
       </section>
@@ -187,9 +229,13 @@
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200" alt="Especializado Legal">
           <div class="news-body">
             <span class="badge" style="background: var(--primary);">Especializado</span>
+            <div class="news-date">8 de Agosto, 2026</div>
             <h2 class="news-title">Guía Técnica de Homologación de Títulos y Asesoría Legal Estudiantil</h2>
-            <p class="news-excerpt">Paso a paso sobre cómo gestionar disputas académicas, convalidaciones y requisitos para validar tus competencias de forma legal.</p>
-            <a href="https://www.campuslatinoamerica.edu.co" class="btn-read">Ir a CampusLA →</a>
+            <div class="news-content">
+              <p>Paso a paso sobre cómo gestionar disputas académicas, convalidaciones y requisitos para validar tus competencias de forma legal ante las entidades competentes.</p>
+              <h3>Requisitos Esenciales</h3>
+              <p>Conoce la documentación necesaria, los tiempos estimados de respuesta institucional y los canales oficiales habilitados para evitar fraudes o intermediarios no autorizados en el proceso de convalidación.</p>
+            </div>
           </div>
         </article>
       </section>
@@ -199,7 +245,7 @@
     <!-- BARRA LATERAL -->
     <aside>
       
-      <!-- CANAL DE YOUTUBE INDEXADO (CON TU VIDEO 't6cGCMwkvOE') -->
+      <!-- CANAL DE YOUTUBE INDEXADO -->
       <div class="sidebar-widget">
         <div class="sidebar-title">📺 Canal Oficial YouTube</div>
         <div class="video-responsive">
@@ -280,240 +326,4 @@
   </footer>
 
 </body>
-</html>OPTIMIZAR RECURSOS EXTERNOS -->
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-  <link rel="preconnect" href="https://images.unsplash.com">
-
-  <!-- GOOGLE TAG MANAGER (OFICIAL CAMPUSNEWS) -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TP9SK733');</script>
-
-  <!-- SEO ALTO NIVEL & GOOGLE DISCOVER -->
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="description" content="Portal oficial de noticias, análisis académico, política y tendencias de CampusLA.">
-  
-  <!-- ETIQUETAS OPEN GRAPH (OG) PARA REDES SOCIALES -->
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://noticias.campuslatinoamerica.edu.co/">
-  <meta property="og:title" content="CampusNews | El Portal de Noticias de CampusLA">
-  <meta property="og:description" content="Portal oficial de noticias, análisis académico, política y tendencias de CampusLA.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="fb:app_id" content="tu_id_de_facebook_aqui" />
-
-  <title>CampusNews | El Portal de Noticias de CampusLA</title>
-</head>
-
-  <!-- GOOGLE ANALYTICS 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3DWWPFEC3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W3DWWPFEC3');
-  </script>
-
-  <!-- GOOGLE ADSENSE -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6695776573862698" crossorigin="anonymous"></script>
-
-  <!-- WIDGET NETLIFY IDENTITY -->
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-  <style>
-    :root {
-      --primary: #003366;       
-      --brand-green: #1b7e36;   /* Verde oscuro con contraste AAL4.5+ */
-      --dark: #111827;
-      --light: #f4f6f8;
-      --white: #ffffff;
-      --border-color: #e5e7eb;
-      --text-muted: #374151;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--light); color: var(--dark); line-height: 1.6; }
-
-    /* CINTA DE INFORMACIÓN NATIVA */
-    .native-top-bar { background: var(--dark); color: #f3f4f6; padding: 8px 15px; font-size: 0.8rem; }
-    .native-bar-content { max-width: 1150px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-    .native-tag { background: #1b7e36; color: #ffffff; padding: 3px 8px; border-radius: 3px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; }
-    .native-link { color: #ffffff; text-decoration: underline; font-weight: 700; }
-
-    /* HEADER INSTITUCIONAL */
-    header { background-color: var(--primary); color: var(--white); padding: 25px 15px; text-align: center; border-bottom: 5px solid var(--brand-green); }
-    .brand-title { font-size: 2.5rem; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; }
-    .brand-title span { color: #28a745; }
-    .tagline { font-size: 0.95rem; opacity: 0.95; margin-top: 5px; font-weight: 400; }
-
-    /* NAVEGACIÓN PRINCIPAL */
-    nav { background-color: var(--dark); display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; }
-    nav a { color: var(--white); text-decoration: none; padding: 12px 20px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; transition: background 0.3s; }
-    nav a:hover { background-color: var(--brand-green); }
-
-    /* BANNER PUBLICITARIO ADSENSE FIX WIDTH */
-    .adsense-wrapper {
-      background: #f1f5f9;
-      border: 1px dashed #cbd5e1;
-      text-align: center;
-      padding: 10px;
-      margin: 1.5rem auto;
-      max-width: 1150px;
-      width: 100%;
-      min-height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    /* LAYOUT PRINCIPAL RESPONSIVE */
-    .main-container { max-width: 1150px; margin: 25px auto; padding: 0 15px; display: grid; grid-template-columns: 2.2fr 1fr; gap: 25px; }
-    @media (max-width: 850px) { .main-container { grid-template-columns: 1fr; } }
-
-    /* SECCIONES DE NOTICIAS */
-    .section-header { border-bottom: 3px solid var(--primary); margin-bottom: 20px; }
-    .section-title { background: var(--primary); color: var(--white); padding: 6px 15px; font-size: 1rem; font-weight: 800; text-transform: uppercase; display: inline-block; }
-
-    /* TARJETA DE NOTICIA */
-    .news-card { background: var(--white); border-radius: 8px; overflow: hidden; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #cbd5e1; }
-    .news-card img { width: 100%; height: 260px; object-fit: cover; background-color: #e2e8f0; }
-    .news-body { padding: 20px; }
-    .badge { background: var(--brand-green); color: #ffffff; padding: 4px 9px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; border-radius: 3px; display: inline-block; margin-bottom: 8px; }
-    .badge-today { background: #9b1c1c; color: #ffffff; }
-    .news-title { font-size: 1.4rem; color: var(--primary); margin: 8px 0; font-weight: 800; line-height: 1.3; }
-    .news-excerpt { color: #1f2937; font-size: 0.95rem; margin-bottom: 15px; }
-    .btn-read { display: inline-block; background: var(--primary); color: var(--white); padding: 10px 18px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.85rem; cursor: pointer; border: none; }
-    .btn-read:hover { background: #002244; }
-
-    /* NOTA EDITORIAL NATIVA */
-    .native-editorial-note { background: #ffffff; padding: 15px 20px; margin: 25px 0; border: 1px solid var(--border-color); border-left: 4px solid var(--primary); border-radius: 6px; }
-    .native-editorial-note p { font-size: 0.9rem; color: #1f2937; }
-    .native-editorial-note a { color: var(--primary); font-weight: 800; text-decoration: underline; }
-
-    /* SIDEBAR */
-    .sidebar-widget { background: var(--white); padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #cbd5e1; }
-    .sidebar-title { font-size: 1.1rem; font-weight: 800; border-bottom: 3px solid var(--brand-green); padding-bottom: 8px; margin-bottom: 15px; color: var(--primary); text-transform: uppercase; }
-    
-    /* REPRODUCTOR YOUTUBE */
-    .video-responsive { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; background: #000; }
-    .video-responsive iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-    /* REDES SOCIALES */
-    .social-links { display: flex; flex-direction: column; gap: 8px; }
-    .social-btn { padding: 10px 12px; background: #f3f4f6; color: #111827; text-decoration: none; border-radius: 4px; font-weight: 800; font-size: 0.85rem; border: 1px solid #9ca3af; transition: all 0.2s; }
-    .social-btn:hover { background: var(--primary); color: var(--white); }
-
-    /* DIRECTORIO DE PAUTA SILENCIOSA */
-    .native-partners-container { background: var(--white); padding: 25px 20px; border-radius: 8px; margin: 30px auto; max-width: 1150px; border: 1px solid var(--border-color); }
-    .partners-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--brand-green); padding-bottom: 10px; margin-bottom: 15px; }
-    .partners-title { font-size: 0.95rem; font-weight: 800; color: var(--primary); text-transform: uppercase; }
-    .partners-subtle-tag { font-size: 0.75rem; color: #4b5563; font-style: italic; }
-    
-    .partners-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-    .partner-item { padding: 12px; border: 1px dashed #9ca3af; border-radius: 4px; background: #fafafa; font-size: 0.8rem; }
-    .partner-item.active { border: 1px solid var(--brand-green); background: #f0fff4; }
-    .partner-item strong { display: block; color: var(--primary); font-size: 0.85rem; margin-bottom: 2px; }
-    .partner-item a { color: var(--brand-green); font-weight: 800; text-decoration: underline; font-size: 0.8rem; display: inline-block; margin-top: 5px; }
-
-    /* FOOTER */
-    footer { background: var(--dark); color: var(--white); text-align: center; padding: 30px 15px; margin-top: 40px; font-size: 0.85rem; }
-    footer button { background: none; border: none; color: #ffffff; cursor: pointer; font-size: 0.85rem; margin: 0 8px; font-family: inherit; text-decoration: underline; font-weight: 600; }
-    footer button:hover { color: #28a745; }
-    footer a { color: #ffffff; text-decoration: underline; margin: 0 8px; font-weight: 600; }
-    footer a:hover { color: #28a745; }
-
-    /* MODALES */
-    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; justify-content: center; align-items: center; padding: 15px; }
-    .modal-card { background: #ffffff; width: 100%; max-width: 650px; padding: 30px; border-radius: 8px; position: relative; max-height: 85vh; overflow-y: auto; text-align: left; color: var(--dark); }
-    .modal-card h2 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid var(--brand-green); padding-bottom: 8px; font-size: 1.3rem; }
-    .modal-card p, .modal-card ul { color: #1f2937; margin-bottom: 12px; font-size: 0.95rem; }
-    .modal-card ul { padding-left: 20px; }
-    .modal-card a { color: var(--primary); font-weight: bold; text-decoration: underline; }
-    .close-btn { position: absolute; top: 15px; right: 15px; background: #e5e7eb; border: none; font-size: 1.2rem; cursor: pointer; width: 32px; height: 32px; border-radius: 50%; color: #1f2937; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-    .close-btn:hover { background: var(--primary); color: #fff; }
-
-    .article-modal-img { width: 100%; height: 280px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; }
-    .article-meta { font-size: 0.8rem; color: #4b5563; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
-  </style>
-</head>
-<body>
-
-  <!-- MODAL SCRIPT -->
-  <script>
-    const noticiasDB = {
-      'art-1': {
-        title: "Colombia se prepara para la posesión presidencial del 7 de agosto y los retos en educación superior",
-        img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800",
-        date: "23 de Julio, 2026",
-        content: `<p>La posesión presidencial del 7 de agosto representa no solo un cambio de mando, sino el inicio de una transformación profunda en el sector educativo colombiano. Analistas coinciden en que los retos actuales exigen una reforma estructural que priorice la calidad académica, la infraestructura tecnológica en zonas rurales y el fortalecimiento de la financiación para estudiantes de bajos recursos.</p>
-        <p>Este periodo presidencial, que abarca de 2026 a 2030, se plantea como un ciclo donde la descentralización de la educación superior será el eje vertebrador. Las expectativas están centradas en cómo el nuevo gabinete abordará la brecha existente entre las competencias requeridas por el mercado laboral moderno y la oferta académica actual de las instituciones de educación superior.</p>
-        <p>La radicación de las primeras reformas ante el Congreso de la República será determinante para medir la voluntad política del nuevo gobierno respecto a la gratuidad, el fortalecimiento de la investigación universitaria y la modernización de los currículos frente a la cuarta revolución industrial.</p>`
-      },
-      'art-2': {
-        title: "Cómo la Inteligencia Artificial está revolucionando el aprendizaje de idiomas de forma especializada",
-        img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
-        date: "23 de Julio, 2026",
-        content: `<p>El aprendizaje de segundas y terceras lenguas ha dejado de ser un proceso lineal para convertirse en una experiencia inmersiva y adaptativa, gracias al auge de los modelos de inteligencia artificial (IA). A diferencia de los métodos tradicionales, la nueva generación de plataformas educativas emplea algoritmos que analizan en tiempo real los patrones de error, el nivel de comprensión auditiva y la velocidad de adquisición léxica de cada estudiante.</p>
-        <p>Esta personalización extrema garantiza que cada sesión de estudio esté optimizada para los objetivos específicos del usuario, ya sea para fines académicos, negocios o fines migratorios. Los modelos de lenguaje tipo LLM permiten ahora practicar conversaciones complejas con tutores virtuales que corrigen pronunciación, gramática y modismos con una precisión sorprendente.</p>
-        <p>Expertos en edtech señalan que esta tecnología es apenas la punta del iceberg. Se espera que en los próximos años, la integración de entornos de realidad virtual combinados con IA permita una inmersión lingüística completa sin necesidad de desplazamientos internacionales, democratizando el acceso a niveles de fluidez avanzada.</p>`
-      },
-      'art-3': {
-        title: "El examen TOEFL iBT se reestructura: ahora es más corto, ágil y amigable para los estudiantes",
-        img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
-        date: "23 de Julio, 2026",
-        content: `<p>La reciente reestructuración del examen TOEFL iBT, anunciada por ETS, responde a una demanda global de eficiencia en los procesos de certificación académica. Con una reducción significativa en su duración, el examen ahora se concentra en evaluar las competencias comunicativas esenciales de manera más directa, sin sacrificar la rigurosidad que lo caracteriza como el estándar de oro en las pruebas de suficiencia en inglés.</p>
-        <p>Los cambios más destacados incluyen la simplificación de las instrucciones, la eliminación de secciones redundantes y una optimización en la interfaz de usuario, lo que reduce la carga cognitiva y el estrés durante la evaluación. Esto representa un alivio considerable para miles de estudiantes que requieren puntajes específicos para programas de becas y procesos de homologación de títulos.</p>
-        <p>Esta nueva modalidad es, sin duda, un paso adelante hacia una cultura de evaluación más amigable y accesible. La rapidez en la entrega de resultados y la posibilidad de realizar la prueba en casa o en centros autorizados con los mismos estándares de seguridad, reafirma la posición del TOEFL iBT como la opción preferida por universidades en Estados Unidos, Canadá y Europa.</p>`
-      },
-      'art-4': {
-        title: "Ministerio de Educación e ICETEX anuncian nuevas convocatorias para subsidios de tasa y sostenibilidad",
-        img: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800",
-        date: "27 de Julio, 2026",
-        content: `<p>En respuesta al complejo panorama económico que enfrentan las familias colombianas, el Ministerio de Educación, en articulación con el ICETEX, ha lanzado un ambicioso paquete de alivios financieros. Estas convocatorias están diseñadas para mitigar la deserción escolar y garantizar que miles de estudiantes puedan continuar con sus trayectorias educativas a pesar de la coyuntura inflacionaria.</p>
-        <p>Los subsidios no solo cubren el diferencial de tasas de interés para créditos educativos vigentes, sino que también implementan nuevos mecanismos de apoyo a la sostenibilidad académica para estudiantes en condiciones de vulnerabilidad extrema. Estas ayudas buscan aliviar el costo de vida estudiantil, incluyendo apoyos para transporte y materiales académicos esenciales.</p>
-        <p>El proceso de postulación se ha digitalizado completamente, facilitando el acceso a los ciudadanos en regiones apartadas. Se espera que este conjunto de medidas favorezca significativamente la retención estudiantil para el segundo semestre de 2026, consolidando una red de seguridad que permite la continuidad de los proyectos de formación profesional en todo el territorio nacional.</p>`
-      },
-      'art-5': {
-        title: "El impacto de los 'Agentes Inteligentes' en la evaluación y tutoría de la educación universitaria",
-        img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800",
-        date: "27 de Julio, 2026",
-        content: `<p>La introducción de agentes inteligentes en el ecosistema universitario ha dejado de ser un proyecto experimental para convertirse en una realidad operativa. Estos sistemas, potenciados por inteligencia artificial generativa, están actuando como tutores 24/7, proporcionando retroalimentación inmediata, resolución de dudas complejas y orientación metodológica personalizada para investigadores y estudiantes de pregrado.</p>
-        <p>Lo que hace especial a esta nueva era de herramientas edtech es su capacidad para evaluar procesos creativos y analíticos en lugar de limitarse a respuestas binarias. Por ejemplo, los agentes ahora pueden analizar la estructura argumentativa de un ensayo, detectar inconsistencias en el razonamiento lógico de un código fuente o incluso realizar simulacros de defensa oral para proyectos de grado.</p>
-        <p>A pesar de los retos éticos y de seguridad de la información, el consenso entre los expertos del sector es que la implementación de estas herramientas permite a los docentes enfocarse en tareas de mayor nivel, como el mentorazgo académico y la investigación interdisciplinaria, mientras que la parte administrativa y de nivelación de conocimientos es gestionada eficazmente por los agentes.</p>`
-      },
-      'art-6': {
-        title: "Aumenta la exigencia de certificaciones B2/C1 para opciones de grado y becas internacionales en 2026",
-        img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800",
-        date: "27 de Julio, 2026",
-        content: `<p>El panorama de la competitividad laboral internacional ha llevado a las instituciones de educación superior a elevar el estándar de egreso. Actualmente, más del 80% de las universidades en la región han estandarizado la obligatoriedad de presentar certificaciones internacionales de nivel B2 o C1 (según el Marco Común Europeo) para obtener el título profesional y acceder a becas de movilidad internacional.</p>
-        <p>Esta medida, si bien desafiante para muchos estudiantes, responde a la necesidad de garantizar que los profesionales latinoamericanos puedan integrarse con éxito en economías globales donde el inglés es la lengua franca de la ciencia, la tecnología y el comercio. Las universidades están acompañando esta exigencia con centros de lenguas robustos y convenios para que los estudiantes preparen sus exámenes con simuladores oficiales.</p>
-        <p>La recomendación para los estudiantes de pregrado es iniciar el proceso de preparación y certificación desde los primeros semestres. Las oportunidades que se abren para aquellos que poseen un nivel C1 son exponenciales, abriendo puertas tanto en programas de posgrado de élite como en el mercado laboral transnacional que busca talento altamente calificado y con habilidades comunicativas globales.</p>`
-      },,
-
-      'art-7': {
-        title: "Abelardo de la Espriella asume la Presidencia de Colombia y comienza el periodo 2026-2030",
-        img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
-        date: "7 de Agosto, 2026",
-        content: `<p>Colombia inició el 7 de agosto de 2026 un nuevo periodo presidencial, con Abelardo de la Espriella como jefe de Estado para el periodo constitucional 2026-2030.</p>
-        <p>La nueva administración enfrenta entre sus primeros desafíos la puesta en marcha de su agenda de gobierno, la definición de prioridades económicas y sociales y la coordinación con las entidades territoriales.</p>
-        <p><strong>Nota editorial:</strong> Esta información corresponde al contexto político publicado previamente por CampusNews y debe actualizarse conforme se produzcan nuevos anuncios oficiales.</p>`
-      },
-
-      'art-8': {
-        title: "Terremoto de magnitud 7,4 sacude el occidente de Colombia y activa la respuesta de emergencia",
-        img: "https://images.unsplash.com/photo-1596495577886-d920f1fb753d?w=800",
-        date: "10 de Agosto, 2026",
-        content: `<p>Un terremoto de magnitud 7,4 sacudió el occidente de Colombia durante la mañana del lunes 10 de agosto de 2026. Los reportes disponibles ubican el epicentro en las inmediaciones de San José del Palmar, Chocó, y señalan que el movimiento fue percibido en amplias zonas del país.</p>
-        <p>Los primeros balances publicados durante la jornada reportaron víctimas mortales, personas heridas y daños estructurales en distintos municipios. Las cifras son preliminares y pueden cambiar mientras continúan las labores de búsqueda, rescate y evaluación de daños.</p>
-        <p>La respuesta de las autoridades se concentra en la atención de las comunidades afectadas, la evaluación de infraestructura y las operaciones de rescate. Para actualizaciones sísmicas y reportes oficiales, se recomienda consultar directamente al Servicio Geológico Colombiano.</p>
-        <p><strong>Fuentes consultadas:</strong> Servicio Geológico Colombiano, Reuters y Associated Press, con información disponible al 10 de agosto de 2026. <a href="https://www.sgc.gov.co/sismos" target="_blank" rel="noopener">Consultar el visor oficial del SGC →</a></p>`
-      }
-    };
-
-    function openArticleModal(artId) {
+</html>
