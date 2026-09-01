@@ -236,28 +236,58 @@
     </p>
   </footer>
 
-  <!-- MOTOR DE JAVASCRIPT DINÁMICO -->
-  const noticiasDB = {
-    'art-10': {
-        title: "Nuevo Título de Tu Artículo Destacado",
-        badge: "Tendencias & Tech",
+   <!-- MOTOR DE JAVASCRIPT DINÁMICO -->
+  <script>
+    const noticiasDB = {
+      'art-10': {
+        title: "Los Más Ricos del Mundo según Forbes 2026: Elon Musk Lidera la Lista Histórica",
+        badge: "Economía & Finanzas",
         date: "1 de Septiembre, 2026",
-        img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-        excerpt: "Breve resumen llamativo para la tarjeta principal del portal de noticias.",
+        img: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80",
+        excerpt: "Forbes publica su prestigioso ranking global de millonarios para 2026. Conoce las cifras récord impulsadas por la tecnología y la innovación.",
         content: `
-          <span class="badge">Tendencias & Tech</span>
+          <span class="badge">Economía & Finanzas</span>
           <div style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 12px 0; font-weight: 600;">1 de Septiembre, 2026</div>
-          <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 15px;">Nuevo Título de Tu Artículo Destacado</h2>
+          <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 15px;">Los Más Ricos del Mundo según Forbes 2026: Elon Musk Lidera la Lista Histórica</h2>
           <div class="full-article-content">
-            <h3>Subtítulo de la sección principal</h3>
-            <p>Aquí escribes todo el párrafo completo con el contenido detallado de la noticia que deseas publicar en el portal.</p>
+            <h3>Un año récord para las grandes fortunas globales</h3>
+            <p>La revista Forbes ha publicado su esperado listado anual con las personas más adineradas del planeta, marcando un hito histórico impulsado principalmente por el vertiginoso crecimiento de la industria tecnológica, la inteligencia artificial y la revalorización de empresas aeroespaciales.</p>
+            
+            <p>Encabezando el podio global se encuentra nuevamente <strong>Elon Musk</strong>, cuya fortuna ha alcanzado cifras sin precedentes gracias al fuerte impulso de Tesla y las rondas de capitalización de SpaceX. Detrás de él, los gigantes de internet y el software continúan dominando los primeros puestos del ranking internacional.</p>
+            
+            <h3>Top de líderes destacados en el ranking Forbes 2026</h3>
             <ul>
-              <li><strong>Punto clave uno:</strong> Descripción detallada del primer elemento relevante.</li>
-              <li><strong>Punto clave dos:</strong> Descripción detallada del segundo elemento relevante.</li>
+              <li><strong>1. Elon Musk ($839B):</strong> A la cabeza con sus empresas clave Tesla y SpaceX, consolidando el dominio tecnológico norteamericano.</li>
+              <li><strong>2. Larry Page & 3. Sergey Brin ($257B y $237B):</strong> Los cofundadores de Google mantienen un crecimiento sólido respaldado por los avances masivos en ecosistemas digitales.</li>
+              <li><strong>4. Jeff Bezos ($224B):</strong> El fundador de Amazon sigue firme en el top global gracias a la expansión constante del comercio electrónico y la computación en la nube (AWS).</li>
+              <li><strong>5. Mark Zuckerberg ($222B):</strong> Liderando el ecosistema de Meta con fuertes inversiones estratégicas en redes sociales y hardware de nueva generación.</li>
             </ul>
-            <p>Párrafo de cierre o conclusión del artículo informativo para los lectores de CampusNews.</p>
+            
+            <p>Este panorama demuestra cómo la innovación disruptiva y la capacidad de pivotar hacia sectores de alto riesgo continúan redefiniendo la economía global y el mapa de las mayores fortunas del siglo XXI.</p>
           </div>
         `
+      },
+      'art-9': {
+        title: "Historias de Valor y Tragedia: Los Casos Más Duros Tras la Emergencia Sísmica",
+        badge: "Especial Emergencia",
+        date: "14 de Agosto, 2026",
+        img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+        excerpt: "Breve resumen de la noticia anterior para mantener la integridad del bloque.",
+        content: `
+          <span class="badge">Especial Emergencia</span>
+          <div style="font-size: 0.8rem; color: #6b7280; margin: 8px 0 12px 0; font-weight: 600;">14 de Agosto, 2026</div>
+          <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 15px;">Historias de Valor y Tragedia: Los Casos Más Duros Tras la Emergencia Sísmica</h2>
+          <div class="full-article-content">
+            <p>Contenido del artículo anterior correspondiente al art-9...</p>
+          </div>
+        `
+      }
+    };
+
+    window.onload = function() {
+      filtrarNoticias('todas');
+    };
+  </script>
       },
     'art-9': {
         // ... (el resto de tus artículos continúan aquí abajo)
