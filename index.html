@@ -188,7 +188,132 @@
     </aside>
 
   </div>
+<!-- =================================================================
+     MÓDULO DE ENSAYOS & COLUMNAS DE OPINIÓN (TIPO PERL / EMBEDDED)
+     Ubicación: Abajo del directorio de alianzas / Antes de <footer>
+     ================================================================= -->
+<section id="seccion-columnas-opinion" style="max-width: 1120px; margin: 30px auto; padding: 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e5e7eb; box-shadow: 0 4px 12px rgba(0,0,0,0.04); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  
+  <!-- Encabezado de la Sección -->
+  <div style="border-bottom: 2px solid #003366; padding-bottom: 8px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="color: #003366; font-size: 1rem; text-transform: uppercase; font-weight: 800; letter-spacing: 0.5px; margin: 0;">
+      ✍️ Columnas & Ensayos de Opinión
+    </h3>
+    <span style="font-size: 0.75rem; color: #28a745; font-weight: 700; background: #e6f4ea; padding: 2px 8px; border-radius: 4px;">
+      Archivo Semanal
+    </span>
+  </div>
 
+  <!-- CONTENEDOR PRINCIPAL DE ARTÍCULOS -->
+  <div id="lista-ensayos-container" style="display: flex; flex-direction: column; gap: 12px;">
+
+    <!-- =========================================================
+         ARTÍCULO 1 (SEMANA 1): LA ARQUITECTURA DE LA AMBIGÜEDAD
+         ========================================================= -->
+    <div class="item-ensayo" style="border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; background: #fafafa;">
+      
+      <!-- Botón Desplegable -->
+      <button onclick="toggleEnsayo('art-op-1')" id="btn-art-op-1" style="width: 100%; text-align: left; background: #f4f6f8; border: none; padding: 14px 18px; font-weight: 700; color: #003366; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; outline: none; transition: background 0.2s;">
+        <span style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: #28a745;">📝</span> 
+          <span>La Arquitectura de la Ambigüedad: Del Realismo Mágico a la Volatilidad Humana</span>
+        </span>
+        <span id="indicator-art-op-1" style="font-size: 0.75rem; color: #6b7280; font-weight: 600; white-space: nowrap; margin-left: 10px;">
+          19 Oct, 2026 ▼
+        </span>
+      </button>
+
+      <!-- Cuerpo Completo Desplegable -->
+      <div id="art-op-1" style="display: none; padding: 22px; background: #ffffff; border-top: 1px solid #e5e7eb; font-size: 0.95rem; line-height: 1.7; color: #374151;">
+        
+        <!-- Metadata -->
+        <div style="font-size: 0.85rem; color: #6b7280; font-weight: 600; border-bottom: 1px solid #f3f4f6; padding-bottom: 10px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+          <span>Por <strong style="color: #003366;">Hollman Álvarez</strong></span>
+          <span style="background: #28a745; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.7rem; text-transform: uppercase;">Opinión & Ensayo</span>
+        </div>
+
+        <!-- Introducción -->
+        <p style="font-size: 1.05rem; font-weight: 600; color: #003366; margin-bottom: 15px; line-height: 1.6;">
+          Diariamente, los titulares de la prensa global y las crónicas independientes reportan sucesos de la vida real que desafían los límites de la lógica convencional. Ciudadanos del común se convierten en protagonistas de episodios que rozan la ficción literaria; un fenómeno que evoca la esencia del realismo mágico acuñado por Gabriel García Márquez.
+        </p>
+
+        <p style="margin-bottom: 15px;">
+          Colombia no es solo la cuna narrativa de esta corriente; es un laboratorio social vivo donde más de 50 millones de personas experimentan la impredecibilidad como una constante. Sin embargo, surge una interrogante fundamental: si biológica y estructuralmente estamos constituidos por los mismos principios que un ciudadano en Europa, Asia o África, ¿por qué la dinámica del entorno genera una distorsión tan profunda de la realidad cotidiana? La respuesta no reside en una particularidad genética, sino en el entorno y en las reglas del juego. Cuando un entorno social, empresarial o afectivo opera bajo la <strong>falta de claridad</strong>, la incertidumbre se normaliza.
+        </p>
+
+        <!-- Subtítulo 1 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          1. La Erosión de los Mínimos Éticos y la Normalización de la Ambigüedad
+        </h4>
+        <p style="margin-bottom: 15px;">
+          A pesar del notable crecimiento en la cobertura educativa en Colombia —con más de 300 instituciones de educación superior activas—, la acumulación de títulos no ha logrado resolver la verdadera crisis de fondo: la ausencia de una <strong>reforma continua de los valores culturales</strong>. La sociedad ha caído en una trampa de tolerancia pasiva, donde la resignación colectiva reemplaza a los mínimos éticos innegociables.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Bajo el pretexto pragmático de que <em>"nadie es perfecto"</em>, se ha legitimado la aceptación de vicios, conductas evasivas y faltas de transparencia. Esta complacencia cultural dialoga directamente con lo que el profesor <strong>Robert I. Sutton (Stanford)</strong> expone en sus investigaciones sobre la dinámica de la toxicidad: el mayor peligro para cualquier organización o relación no es la falla técnica, sino el <strong>costo oculto de tolerar la ambigüedad y la mezquindad</strong>. Cuando un sistema perdona la falta de integridad por costumbre, el entorno entero se degrada.
+        </p>
+
+        <!-- Subtítulo 2 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          2. La Degradación del Sujeto de Derechos y la Tragedia Desatendida
+        </h4>
+        <p style="margin-bottom: 15px;">
+          Cuando la ambigüedad y la falta de responsabilidad afectiva se institucionalizan, las consecuencias trascienden el sufrimiento silencioso del individuo y escalan hacia la tragedia colectiva. Los titulares diarios documentan un patrón alarmante de crímenes pasionales, violencia intrafamiliar y homicidios desatados por la incapacidad de gestionar el conflicto y el quiebre de las expectativas.
+        </p>
+        <p style="margin-bottom: 15px;">
+          En el fondo de este fenómeno subyace una vulneración sistemática del individuo como un <strong>sujeto de derechos y de conciencia</strong>. Esta patología no guarda un monopolio de género: la violencia, el chantaje emocional y la desintegración psíquica son dinámicas recíprocas manifestadas en múltiples formas de abuso psicológico, físico y patrimonial.
+        </p>
+
+        <!-- Subtítulo 3 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          3. La Banalización del Descarte y la Tiranía Cotidiana
+        </h4>
+        <p style="margin-bottom: 15px;">
+          En un país cuya historia ha estado marcada por la corrupción sistémica, se ha permeado una narrativa perversa: <em>"si los demás lo hacen, mi falta no es grave"</em>. Esta lógica ha dado paso a una red de <strong>microestafas emocionales, financieras y relacionales</strong>. La era digital ha facilitado esta degradación mediante herramientas cotidianas como el bloqueo instantáneo o el <em>ghosting</em>, utilizadas para anular arbitrariamente al otro desde una posición de poder asimétrico.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Como lo advirtió la filósofa <strong>Hannah Arendt</strong> en su análisis sobre la <em>banalidad del mal</em>, las mayores atrocidades no requirieron de monstruos, sino de ciudadanos comunes que decidieron suspender su juicio moral en las interacciones ordinarias. Nos quejamos de los tiranos y corruptos que dirigen los destinos de la nación, pero ignoramos que, en la microescala de nuestras vidas privadas, actuamos como los mismos verdugos que censuramos.
+        </p>
+
+        <!-- Subtítulo 4 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          4. La Claridad como Imperativo Ético
+        </h4>
+        <p style="margin-bottom: 15px;">
+          Recuperar el rumbo como sociedad exige desmantelar la cultura del pretexto. Como lo plantea el marco analítico de <strong>Robert I. Sutton (Stanford)</strong>, la decisión de erradicar la manipulación y la falta de transparencia es un estándar de supervivencia y excelencia. Exigir respeto, poner límites firmes a la ambigüedad y negarse a habitar el terreno de las falsas promesas es el primer paso para recuperar la paz mental y la dignidad. 
+        </p>
+        <p style="margin-bottom: 0;">
+          La claridad no te la da quien te sumerge en la duda; la claridad te la das tú mismo cuando decides que no vas a permitir que tu tiempo, tu trabajo y tu salud emocional sean consumidos por la especulación del otro. Soltar la incertidumbre no es perder: es el acto supremo de reconstrucción personal y el único camino posible para construir un futuro sólido.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- PARA LA PRÓXIMA SEMANA: SIMPLEMENTE DUPLICAS EL BLOQUE DE ARRIBA 
+         Y CAMBIAS 'art-op-1' POR 'art-op-2' Y EL TÍTULO -->
+
+  </div>
+</section>
+
+<!-- LÓGICA JAVASCRIPT EMBEBIDA E INDEPENDIENTE -->
+<script>
+  function toggleEnsayo(id) {
+    const el = document.getElementById(id);
+    const indicator = document.getElementById('indicator-' + id);
+    const btn = document.getElementById('btn-' + id);
+
+    if (el) {
+      if (el.style.display === 'none' || el.style.display === '') {
+        el.style.display = 'block';
+        if (indicator) indicator.innerHTML = 'Ocultar ▲';
+        if (btn) btn.style.background = '#e9ecef';
+      } else {
+        el.style.display = 'none';
+        if (indicator) indicator.innerHTML = '19 Oct, 2026 ▼';
+        if (btn) btn.style.background = '#f4f6f8';
+      }
+    }
+  }
+</script>
   <!-- DIRECTORIO DE PAUTA SILENCIOSA -->
   <section class="native-partners-container">
     <div class="partners-header">
