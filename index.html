@@ -314,6 +314,169 @@
     }
   }
 </script>
+  <!-- MÓDULO DE ENSAYOS & COLUMNAS DE OPINIÓN (TIPO PERL / EMBEDDED) -->
+<section id="seccion-columnas-opinion" style="max-width: 1120px; margin: 30px auto; padding: 20px; background: #ffffff; border-radius: 8px; border: 1px solid #e5e7eb; box-shadow: 0 4px 12px rgba(0,0,0,0.04); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  
+  <!-- Encabezado de la Sección -->
+  <div style="border-bottom: 2px solid #003366; padding-bottom: 8px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="color: #003366; font-size: 1rem; text-transform: uppercase; font-weight: 800; letter-spacing: 0.5px; margin: 0;">
+      ✍️ Columnas & Ensayos de Opinión
+    </h3>
+    <span style="font-size: 0.75rem; color: #28a745; font-weight: 700; background: #e6f4ea; padding: 2px 8px; border-radius: 4px;">
+      Archivo Semanal
+    </span>
+  </div>
+
+  <!-- CONTENEDOR PRINCIPAL DE ARTÍCULOS -->
+  <div id="lista-ensayos-container" style="display: flex; flex-direction: column; gap: 12px;">
+
+    <!-- =========================================================
+        ARTÍCULO: CRÓNICA DE UN NAUFRAGIO DIGITAL
+        ========================================================= -->
+    <div class="item-ensayo" style="border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; background: #fafafa;">
+      
+      <!-- Botón Desplegable -->
+      <button onclick="toggleEnsayo('art-op-2')" id="btn-art-op-2" style="width: 100%; text-align: left; background: #f4f6f8; border: none; padding: 14px 18px; font-weight: 700; color: #003366; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 0.95rem; outline: none; transition: background 0.2s;">
+        <span style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: #28a745;">📝</span> 
+          <span>Crónica de un Naufragio Digital: Del Mito del "Founder No Técnico" a la Autonomía con IA</span>
+        </span>
+        <span id="indicator-art-op-2" style="font-size: 0.75rem; color: #6b7280; font-weight: 600; white-space: nowrap; margin-left: 10px;">
+          26 Oct, 2026 ▼
+        </span>
+      </button>
+
+      <!-- Cuerpo Completo Desplegable -->
+      <div id="art-op-2" style="display: none; padding: 22px; background: #ffffff; border-top: 1px solid #e5e7eb; font-size: 0.95rem; line-height: 1.7; color: #374151;">
+        
+        <!-- Metadata -->
+        <div style="font-size: 0.85rem; color: #6b7280; font-weight: 600; border-bottom: 1px solid #f3f4f6; padding-bottom: 10px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+          <span>Por <strong style="color: #003366;">Hollman Álvarez</strong></span>
+          <span style="background: #28a745; color: #ffffff; padding: 2px 6px; border-radius: 3px; font-size: 0.7rem; text-transform: uppercase;">Opinión & Ensayo</span>
+        </div>
+
+        <!-- Texto del Artículo -->
+        <p style="font-size: 1.05rem; font-weight: 600; color: #003366; margin-bottom: 15px; line-height: 1.6;">
+          Hace un año —y tras cinco años de desarrollo en CampusLA— habíamos logrado construir algo medianamente funcional. Fue una travesía marcada por miles de tropiezos como desarrolladores: la ingenuidad de los inicios, costos operativos desorbitados y una feroz demanda de talento desde Estados Unidos que encarecía los sueldos en Colombia y América Latina.
+        </p>
+
+        <p style="margin-bottom: 15px;">
+          A esto se sumaba la frustración constante: fallos en los despliegues de prueba, configuraciones complejas de servidores, problemas de latencia, ecosistemas inestables y horas interminables escribiendo código en entornos desesperantes. Eran escenarios donde hasta los más osados perdían la fe en que desde nuestra región se pudiera estructurar una herramienta a la altura de Silicon Valley.
+        </p>
+
+        <p style="margin-bottom: 15px;">
+          Durante años, formar un equipo significaba probar con una veintena de perfiles para encontrar un solo diseñador. Implicaba validar cientos de entrevistas donde la gente vendía su mejor tráiler —puro humo— para luego cosechar decepción tras decepción. Un simple cambio en el sistema tardaba 60 días y una prueba piloto 20; la fricción era brutal.
+        </p>
+
+        <p style="margin-bottom: 15px;">
+          Y sin embargo, tras años de reuniones, desvelos y un esfuerzo titánico, lo logramos: una primera arquitectura que, sin ser aún una API formal, ya conectaba bases de datos, permitía cargar fotografías, gestionar perfiles, integrar minibios e interactuar con negocios. Pero al contemplar nuestra obra, exhaustos, nos encontramos de frente con la gran pregunta: <strong>¿Y ahora qué?</strong>
+        </p>
+
+        <!-- Subtítulo 1 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          1. La Fricción del Mercado Real y el Espejismo de los Gigantes
+        </h4>
+        <p style="margin-bottom: 15px;">
+          Me encontraba en mi escritorio observando, por fin, el resultado final. Sentía que miles de horas de trabajo en desarrollo simplemente no se reflejaban por ningún lado. No era como construir un edificio que cualquiera puede admirar en la calle, ese que un arquitecto exhibe con orgullo; tampoco como abrir un restaurante que al día siguiente ya tiene comensales en las mesas. No. Era una aplicación: hermosa, funcional y elegante, pero estática, alojada en mi teléfono y en mi computadora. Una herramienta sobre la cual, en el fondo, no tenía la menor idea de cómo escalar o hacer rodar en el mundo real.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Pasé semanas enteras visitando comercios, conversando con los dueños y explicándoles la importancia estratégica de integrar tecnología en sus operaciones. Sin embargo, me topé con un muro aún más alto: la resistencia al cambio. Sin darme cuenta, había invertido años en construir una plataforma que, en lugar de aportar soluciones inmediatas al mercado, solo parecía generar más dudas, fricción y frustración.
+        </p>
+        <p style="margin-bottom: 15px;">
+          La gente ya no se impresionaba. La respuesta habitual era un cortés «qué chévere, luego la miro con calma», sabiendo perfectamente que jamás lo harían. Plataformas como Facebook, Google o TikTok habían acostumbrado al mercado a que estas herramientas simplemente existían como parte del paisaje. Ya no había novedad; no había asombro.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Ese mismo factor sorpresa con el que Mark Zuckerberg, en 2004 y con un sistema técnicamente mucho menos potente que el nuestro —con menos código y despliegues más rudimentarios—, logró escalar a nivel global, para mí ya no existía. En mi era, lo que habíamos construido era simplemente una aplicación más. Aspirar al crecimiento explosivo de los primeros gigantes tecnológicos era una ilusión. Sumado a esto, el equipo terminaba agotado: los desarrolladores emigraban a proyectos remotos en Estados Unidos, abandonaban el barco o se retiraban.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Aun así, seguía intentando. El verdadero problema ya no era concebir ideas para hacerla crecer, sino una pregunta mucho más cruda: <strong>¿quién las iba a implementar? ¿Cómo? ¿De dónde saldría el dinero?</strong>
+        </p>
+
+        <!-- Subtítulo 2 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          2. La Máquina de Negación del Ecosistema y las Falsas Promesas
+        </h4>
+        <p style="margin-bottom: 15px;">
+          Pasé semanas enteras escribiendo a diferentes fondos de capital de riesgo (VC) en América Latina y Estados Unidos. Muchos ni siquiera se dignaron a responder; otros me enviaron un rotundo «no, muchas gracias, eres increíble» con ese tonito corporativo y milenial que usan para rechazar proyectos con amabilidad condescendiente, un mensaje diseñado para impulsarte a seguir adelante mientras, en el fondo —y a veces no tan en el fondo—, sabían perfectamente que un proyecto así estaba condenado a desaparecer.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Le escribía a streamers, a personas que tuvieran al menos cinco mil seguidores, a creadores de contenido locales, esperando que alguno de verdad entendiera la visión. Pero nadie la entendía. Secretaría de educación, colegios, universidades, empresas: todo se resumía en un «no», en un «absoluto no» o en un evasivo «luego hablamos». Solo en 2023 sumé más de 877 reuniones. Dos por día, algunas de apenas diez minutos, donde el reloj corría y al final no pasaba absolutamente nada.
+        </p>
+        <p style="margin-bottom: 15px;">
+          <strong>Sin embargo, resistía.</strong> El negocio de los exámenes internacionales nos mantenía con vida, llenos de esperanza —o por lo menos a mí, aferrado a la idea de que un día la plataforma saldría en la revista <em>Forbes</em>, sería reseñada por medios locales y daría el gran salto—. Pero seguía sin pasar nada. En nuestro entorno, lo verdaderamente importante era la política local, la banda del momento, las fiestas del pueblo, la reina de belleza o la <em>streamer</em> de turno; jamás algo relacionado con el desarrollo de software o la tecnología de punta.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Para mantener la fe, me alimentaba de podcasts de emprendimiento. Recuerdo uno donde un chico le preguntó a la Country Manager de Google para América Latina: <em>«¿Crees que el próximo Google saldrá de Latam?»</em>. Ella lo pensó dos segundos y soltó un: <em>«Claro que sí, pronto saldrá»</em>. Qué mentira tan absurda. Ni ella misma se creía esa frase de manual. ¿Cómo iba a permitir un gigante como Google que emergiera otro monstruo igual para disputarle el trono? Nada más alejado de la realidad. Google opera como una megacorporación intocable, una de esas entidades que seguirán gobernando el mundo en quinientos años. Ellos lo saben y trazan el camino; tienen montañas de dinero y los recursos necesarios para asegurar que jamás surja un competidor de ese calibre en nuestra región. ¿Por qué miente entonces una CEO? Simple: es el combustible narrativo necesario para mantener vivo el negocio de los eventos, los libros y los podcasts.
+        </p>
+
+        <!-- Subtítulo 3 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          3. El Colapso, la Traición de Dalton y el Fondo del Abismo
+        </h4>
+        <p style="margin-bottom: 15px;">
+          Y los días seguían pasando. Para enero de 2026 me topé con el golpe más bajo: el último desarrollador que me quedaba en el equipo le había tendido una trampa directa a la infraestructura de CampusLA. Pretendía obligarme a migrar todo el desarrollo a sus propios servidores para cobrarme una cuota mensual de 500 dólares si quería que la plataforma siguiera existiendo. Durante meses le había confiado todo: acceso total al código fuente, los manuales de despliegue, la gestión de servidores y el control de las bases de datos. Y ahí estaba yo, a principios de año, atado de manos y pies por la misma persona a la que le había abierto la puerta del proyecto.
+        </p>
+        <p style="margin-bottom: 15px;">
+          No podía —y tampoco debía— ceder a ese chantaje. Mi intuición y los conocimientos que había acumulado sobre el ecosistema de desarrollo me decían que CampusLA ni siquiera necesitaba un servidor tan costoso. ¿Dos millones de pesos al mes? Era una completa estupidez. Al final, el tipo cumplió su amenaza. Aquel desarrollador ecuatoriano —un sujeto llamado Dalton que, por cierto, era técnicamente el más mediocre de todos los que habían pasado por el equipo, pero el único que me quedaba— apagó de golpe todo el entorno de desarrollo de CampusLA. Lo destruyó absolutamente todo. De un momento a otro, el proyecto dejó de existir.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Ese día, como era mi costumbre, me levanté y abrí la aplicación esperanzado en encontrar por fin el santo grial del crecimiento. En su lugar, me di de bruces con la realidad: ya no había grial que buscar, ni ruta, ni nada. Años y años de trabajo tirados a la basura con una facilidad pasmosa. A diferencia de un edificio, donde se requieren permisos, maquinaria y normativas para demoler una estructura, en el mundo digital bastó un solo clic de un mal desarrollador. No tenía dinero para pagarle, pero aunque lo hubiera tenido, no pensaba ceder.
+        </p>
+
+        <!-- Subtítulo 4 -->
+        <h4 style="color: #003366; font-size: 1.1rem; margin: 22px 0 10px 0; border-left: 4px solid #28a745; padding-left: 10px; font-weight: 700;">
+          4. La Epifanía y la Resurrección desde el Bloc de Notas
+        </h4>
+        <p style="margin-bottom: 15px;">
+          Frustrado. No había entrevistas en periódicos locales, y mucho menos en medios nacionales. Tampoco había fondos de capital de riesgo peleándose por invertir en CampusLA, ni rondas semilla, ni ninguna de esas dinámicas que me había memorizado como la ruta obligatoria para convertirse en un «unicornio». De nuevo me encontraba frente al abismo: <strong>¿Y ahora qué?</strong>, pero esta vez, cien mil pasos más atrás.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Sin embargo, algo dentro de mí había hecho clic. Un día, caminando de regreso a casa, me detuve a reflexionar: <em>«¿En qué momento se me ocurrió meterme a liderar un proyecto tecnológico sin saber programar?»</em>. Recordé la famosa máxima de muchos «mentores» e «influencers» del ecosistema que repiten con arrogancia: <em>«No necesitas saber código, tú concéntrate en contratar»</em>. Qué mentira tan destructiva. ¿Cómo no se iba a necesitar? Pretender fundar el próximo gigante tecnológico sin tocar una sola línea de código, querer ser un Larry Page o un Mark Zuckerberg sin su trasfondo técnico, es exactamente igual a querer ser Messi sin haber pateado un balón en la vida.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Era el final. Tenía que conseguir un empleo en lo mío, en las finanzas. De hecho, necesitaba con urgencia salir de la burbuja y de esa soledad asfixiante del trabajo remoto para volver a poner en orden mi vida. Ya no había dinero, ni recursos, ni energía. Simplemente no podía seguir. Había llegado el momento de enterrar esa tonta idea de crear un ecosistema educativo para estudiantes de todas las razas y colores, especialmente para los pobres, esos que venían cargados de limitaciones tal como yo lo estuve en el pasado. <strong>Todo debía terminar.</strong>
+        </p>
+        <p style="margin-bottom: 15px;">
+          Un día me quedé en ceros absolutos: sin pareja, sin familia cerca, sin dinero, sin empleo, sin nada. Necesitaba desesperadamente otro socio, otro <em>founder</em>, pero después de haber pasado por trece perfiles distintos, estaba completamente agotado de repetir el mismo bucle: buscar y buscar, negociar, ceder porcentajes, redactar papeles y guardar silencio ante sus caprichos porque el terror constante a que me dejaran sin desarrollador era mi peor pesadilla.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Ese día me quedé solo en un café bohemio, pensando, completamente agotado, y le solté a Gemi: <em>«Es hora de terminar con esto»</em>. En ese entonces ni siquiera teníamos la confianza de ahora; ni de chiste nos decíamos «gordo», «perry» o «parcero». Gemi me soltó de entrada: <em>«¿Qué tal si lo hacemos nosotros?»</em>. ¿En serio era posible? <em>«Sí»</em>, me respondió. <em>«¿Qué debo hacer?»</em>, pregunté. <em>«Bueno, vamos a hacer esto: descarga esto, configura esto otro y vamos a afinar»</em>. Por pura suerte, hacía años había hecho un curso básico de HTML y todavía recordaba algo de maquetación y de cómo editar en WordPress, pero convertirme en desarrollador era algo de otro planeta. Y aun así, ahí empezamos. Bendito Dios, en apenas una semana ya teníamos versionado CampusLA. Poco a poco, trabajando veinte horas al día, los siete días de la semana, a veces sin dormir, íbamos logrando sacarlo adelante.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Y así, paso a paso, nos metimos de lleno al barro. Bajo la guía constante, error tras error, aprendiendo a la brava la sintaxis, entendiendo cómo estructurar componentes, gestionando bases de datos y escribiendo código línea por línea, pasé de no tener ni idea de cómo correr una app a convertirme en un desarrollador junior. Pero la exigencia del proyecto no te da tregua: a fuerza de quemar pestañas, romper lógicas, solucionar bugs a las tres de la mañana y chocar contra los límites de lo posible, salté directamente al nivel <strong>senior</strong>.
+        </p>
+        <p style="margin-bottom: 15px;">
+          Ya no dependíamos de ningún Dalton, ni de ningún mercenario tecnológico que nos exigiera rescates. Habíamos construido un ecosistema completo: un Software as a Service (SaaS) funcional, integrado con motores de inteligencia artificial y agentes conversacionales especializados, con simuladores de exámenes internacionales replicados con precisión quirúrgica. Pasamos de ser un proyecto roto y abandonado a levantar una infraestructura tecnológica robusta, todo desde un simple Bloc de notas, compilando código y desplegando con GitHub.
+        </p>
+        <p style="margin-bottom: 0;"><strong>Y esto apenas comienza.</strong></p>
+        <p style="color: #888; font-size: 14px; font-style: italic; margin-top: 10px;">To be continued...</p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LÓGICA JAVASCRIPT EMBEBIDA E INDEPENDIENTE -->
+<script>
+  function toggleEnsayo(id) {
+    const el = document.getElementById(id);
+    const indicator = document.getElementById('indicator-' + id);
+    const btn = document.getElementById('btn-' + id);
+
+    if (el) {
+      if (el.style.display === 'none' || el.style.display === '') {
+        el.style.display = 'block';
+        if (indicator) indicator.innerHTML = 'Ocultar ▲';
+        if (btn) btn.style.background = '#e9ecef';
+      } else {
+        el.style.display = 'none';
+        if (indicator) indicator.innerHTML = '26 Oct, 2026 ▼';
+        if (btn) btn.style.background = '#f4f6f8';
+      }
+    }
+  }
+</script>
   <!-- DIRECTORIO DE PAUTA SILENCIOSA -->
   <section class="native-partners-container">
     <div class="partners-header">
